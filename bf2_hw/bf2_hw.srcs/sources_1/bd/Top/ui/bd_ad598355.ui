@@ -1,0 +1,73 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.82901",
+   "Default View_TopLeft":"1212,618",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.5.8 2022-09-21 7111 VDI=41 GEI=38 GUI=JA:10.0 TLS
+#  -string -flagsOSRD
+preplace port pcie_clkin -pg 1 -lvl 0 -x 0 -y 1200 -defaultsOSRD
+preplace port pcie_mgt -pg 1 -lvl 8 -x 2470 -y 1230 -defaultsOSRD
+preplace port port-id_pci_reset -pg 1 -lvl 0 -x 0 -y 1220 -defaultsOSRD
+preplace portBus LED_A3 -pg 1 -lvl 8 -x 2470 -y 320 -defaultsOSRD
+preplace portBus pcie_clkreq_l -pg 1 -lvl 8 -x 2470 -y 540 -defaultsOSRD
+preplace portBus LED_A2 -pg 1 -lvl 8 -x 2470 -y 1250 -defaultsOSRD
+preplace inst xlconstant_1 -pg 1 -lvl 7 -x 2320 -y 540 -defaultsOSRD
+preplace inst axi_interconnect_1 -pg 1 -lvl 5 -x 1490 -y 1110 -defaultsOSRD
+preplace inst util_ds_buf -pg 1 -lvl 1 -x 170 -y 1200 -defaultsOSRD
+preplace inst xdma_0 -pg 1 -lvl 4 -x 1060 -y 1270 -defaultsOSRD
+preplace inst xdma_0_axi_periph -pg 1 -lvl 5 -x 1490 -y 770 -defaultsOSRD
+preplace inst axi_bram_ctrl_0 -pg 1 -lvl 6 -x 1970 -y 210 -defaultsOSRD
+preplace inst blk_mem_gen_0 -pg 1 -lvl 7 -x 2320 -y 130 -defaultsOSRD
+preplace inst axi_gpio_read_count -pg 1 -lvl 6 -x 1970 -y 1020 -defaultsOSRD
+preplace inst axi_gpio_write_count -pg 1 -lvl 6 -x 1970 -y 560 -defaultsOSRD
+preplace inst rst_clk_wiz_100M -pg 1 -lvl 3 -x 710 -y 1070 -defaultsOSRD
+preplace inst clk_wiz -pg 1 -lvl 2 -x 420 -y 1100 -defaultsOSRD
+preplace inst util_vector_logic_0 -pg 1 -lvl 1 -x 170 -y 1090 -defaultsOSRD
+preplace inst axi_gpio_host_ready -pg 1 -lvl 6 -x 1970 -y 400 -defaultsOSRD
+preplace inst axi_gpio_prog_Data -pg 1 -lvl 6 -x 1970 -y 880 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 5 -x 1490 -y 120 -defaultsOSRD
+preplace inst axi_gpio_number_of_hashes -pg 1 -lvl 6 -x 1970 -y 720 -defaultsOSRD
+preplace inst comparator_0 -pg 1 -lvl 7 -x 2320 -y 410 -defaultsOSRD
+preplace inst multi_cores_top_0 -pg 1 -lvl 5 -x 1490 -y 390 -defaultsOSRD
+preplace netloc ARESETN_1 1 3 2 NJ 1090 1300
+preplace netloc M01_ACLK_1 1 2 5 520 970 NJ 970 1260 260 1800 480 2170
+preplace netloc M02_ARESETN_1 1 3 4 890J 960 1240 500 1810 310 2190
+preplace netloc axi_gpio_2_host_Ready 1 4 3 1290 60 NJ 60 2130
+preplace netloc axi_gpio_6_gpio_io_o 1 4 3 1280 270 1820J 290 2120
+preplace netloc axi_gpio_prog_data_i 1 4 3 1270 50 NJ 50 2140
+preplace netloc axi_gpio_read_count_gpio_io_o 1 6 1 2190 440n
+preplace netloc clk_wiz_locked 1 2 1 N 1110
+preplace netloc comparator_0_stall 1 4 4 1300 280 1720J 300 NJ 300 2450
+preplace netloc multi_cores_top_0_bram_addrb 1 5 2 1680 100 NJ
+preplace netloc multi_cores_top_0_bram_dinb 1 5 2 1690 130 2190J
+preplace netloc multi_cores_top_0_bram_web 1 5 2 1700 320 2180J
+preplace netloc multi_cores_top_0_write_count 1 5 2 1680 640 2180
+preplace netloc pci_reset_1 1 0 4 20 1270 NJ 1270 NJ 1270 NJ
+preplace netloc util_ds_buf_IBUF_OUT 1 1 3 320 1250 NJ 1250 NJ
+preplace netloc util_vector_logic_0_Res 1 1 1 NJ 1090
+preplace netloc xdma_0_axi_aclk 1 4 1 1270 650n
+preplace netloc xdma_0_axi_aresetn 1 2 3 530 950 NJ 950 1230
+preplace netloc xdma_0_user_lnk_up 1 4 4 NJ 1250 NJ 1250 NJ 1250 NJ
+preplace netloc xlconstant_0_dout 1 5 2 NJ 120 2150J
+preplace netloc xlconstant_1_dout 1 7 1 NJ 540
+preplace netloc axi_bram_ctrl_0_BRAM_PORTA 1 6 1 2160 60n
+preplace netloc axi_interconnect_1_M00_AXI 1 5 1 1710 190n
+preplace netloc diff_clock_rtl_0_1 1 0 1 NJ 1200
+preplace netloc xdma_0_M_AXI 1 4 1 1280 1050n
+preplace netloc xdma_0_M_AXI_LITE 1 4 1 1250 590n
+preplace netloc xdma_0_axi_periph_M00_AXI 1 5 1 1730 540n
+preplace netloc xdma_0_axi_periph_M01_AXI 1 5 1 1690 730n
+preplace netloc xdma_0_axi_periph_M02_AXI 1 5 1 1720 380n
+preplace netloc xdma_0_axi_periph_M03_AXI 1 5 1 1680 770n
+preplace netloc xdma_0_pcie_mgt 1 4 4 NJ 1230 NJ 1230 NJ 1230 NJ
+preplace netloc xdma_0_axi_periph_M06_AXI 1 5 1 1820 700n
+levelinfo -pg 1 0 170 420 710 1060 1490 1970 2320 2470
+pagesize -pg 1 -db -bbox -sgen -120 0 2650 1410
+"
+}
+{
+   "da_axi4_cnt":"16",
+   "da_board_cnt":"13",
+   "da_bram_cntlr_cnt":"2",
+   "da_clkrst_cnt":"14"
+}

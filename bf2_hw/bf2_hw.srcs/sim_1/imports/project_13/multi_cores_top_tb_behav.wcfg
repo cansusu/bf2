@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_multi_cores_top_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_multi_cores_top" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="213,315.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="213,512.001 ns"></ZoomEndTime>
+      <Cursor1Time time="213,375.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="250"></NameColumnWidth>
+      <ValueColumnWidth column_width="258"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="89" />
+   <wvobject type="logic" fp_name="/tb_multi_cores_top/clk_i">
+      <obj_property name="ElementShortName">clk_i</obj_property>
+      <obj_property name="ObjectShortName">clk_i</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_multi_cores_top/rst_n">
+      <obj_property name="ElementShortName">rst_n</obj_property>
+      <obj_property name="ObjectShortName">rst_n</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_multi_cores_top/start_i">
+      <obj_property name="ElementShortName">start_i</obj_property>
+      <obj_property name="ObjectShortName">start_i</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_multi_cores_top/host_ready">
+      <obj_property name="ElementShortName">host_ready</obj_property>
+      <obj_property name="ObjectShortName">host_ready</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_multi_cores_top/prog_data_i">
+      <obj_property name="ElementShortName">prog_data_i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">prog_data_i[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_multi_cores_top/prog_done_o">
+      <obj_property name="ElementShortName">prog_done_o</obj_property>
+      <obj_property name="ObjectShortName">prog_done_o</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_multi_cores_top/bram_addrb">
+      <obj_property name="ElementShortName">bram_addrb[31:0]</obj_property>
+      <obj_property name="ObjectShortName">bram_addrb[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_multi_cores_top/bram_dinb">
+      <obj_property name="ElementShortName">bram_dinb[127:0]</obj_property>
+      <obj_property name="ObjectShortName">bram_dinb[127:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_multi_cores_top/bram_web">
+      <obj_property name="ElementShortName">bram_web[15:0]</obj_property>
+      <obj_property name="ObjectShortName">bram_web[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_multi_cores_top/write_count">
+      <obj_property name="ElementShortName">write_count[31:0]</obj_property>
+      <obj_property name="ObjectShortName">write_count[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_multi_cores_top/number_of_hashes">
+      <obj_property name="ElementShortName">number_of_hashes[3:0]</obj_property>
+      <obj_property name="ObjectShortName">number_of_hashes[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_multi_cores_top/bloom_msgs">
+      <obj_property name="ElementShortName">bloom_msgs[0:2047][31:0]</obj_property>
+      <obj_property name="ObjectShortName">bloom_msgs[0:2047][31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_multi_cores_top/PWD_SIZE">
+      <obj_property name="ElementShortName">PWD_SIZE[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PWD_SIZE[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_multi_cores_top/EXP_PWD_SIZE">
+      <obj_property name="ElementShortName">EXP_PWD_SIZE[31:0]</obj_property>
+      <obj_property name="ObjectShortName">EXP_PWD_SIZE[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_multi_cores_top/NUM_CORES">
+      <obj_property name="ElementShortName">NUM_CORES[31:0]</obj_property>
+      <obj_property name="ObjectShortName">NUM_CORES[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_multi_cores_top/BRAM_DEPTH">
+      <obj_property name="ElementShortName">BRAM_DEPTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">BRAM_DEPTH[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider569" type="divider">
+      <obj_property name="label">multi_cores</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_multi_cores_top/dut/\core_gen[2].hash_pipeline_i /hash_idx1">
+      <obj_property name="ElementShortName">hash_idx1[14:0]</obj_property>
+      <obj_property name="ObjectShortName">hash_idx1[14:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_multi_cores_top/dut/\core_gen[2].idx1 ">
+      <obj_property name="ElementShortName">\core_gen[2].idx1 [11:0]</obj_property>
+      <obj_property name="ObjectShortName">\core_gen[2].idx1 [11:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_multi_cores_top/dut/\core_gen[2].idx2 ">
+      <obj_property name="ElementShortName">\core_gen[2].idx2 [11:0]</obj_property>
+      <obj_property name="ObjectShortName">\core_gen[2].idx2 [11:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_multi_cores_top/dut/\core_gen[2].idx3 ">
+      <obj_property name="ElementShortName">\core_gen[2].idx3 [11:0]</obj_property>
+      <obj_property name="ObjectShortName">\core_gen[2].idx3 [11:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_multi_cores_top/dut/\core_gen[2].idx4 ">
+      <obj_property name="ElementShortName">\core_gen[2].idx4 [11:0]</obj_property>
+      <obj_property name="ObjectShortName">\core_gen[2].idx4 [11:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_multi_cores_top/dut/\core_gen[2].idx5 ">
+      <obj_property name="ElementShortName">\core_gen[2].idx5 [11:0]</obj_property>
+      <obj_property name="ObjectShortName">\core_gen[2].idx5 [11:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_multi_cores_top/dut/\core_gen[2].idx6 ">
+      <obj_property name="ElementShortName">\core_gen[2].idx6 [11:0]</obj_property>
+      <obj_property name="ObjectShortName">\core_gen[2].idx6 [11:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_multi_cores_top/dut/\core_gen[2].idx7 ">
+      <obj_property name="ElementShortName">\core_gen[2].idx7 [11:0]</obj_property>
+      <obj_property name="ObjectShortName">\core_gen[2].idx7 [11:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_multi_cores_top/dut/\core_gen[2].idx8 ">
+      <obj_property name="ElementShortName">\core_gen[2].idx8 [11:0]</obj_property>
+      <obj_property name="ObjectShortName">\core_gen[2].idx8 [11:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_multi_cores_top/dut/\core_gen[2].idx9 ">
+      <obj_property name="ElementShortName">\core_gen[2].idx9 [11:0]</obj_property>
+      <obj_property name="ObjectShortName">\core_gen[2].idx9 [11:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_multi_cores_top/dut/\core_gen[2].idx10 ">
+      <obj_property name="ElementShortName">\core_gen[2].idx10 [11:0]</obj_property>
+      <obj_property name="ObjectShortName">\core_gen[2].idx10 [11:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_multi_cores_top/dut/\core_gen[2].idx11 ">
+      <obj_property name="ElementShortName">\core_gen[2].idx11 [11:0]</obj_property>
+      <obj_property name="ObjectShortName">\core_gen[2].idx11 [11:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_multi_cores_top/dut/\core_gen[2].idx12 ">
+      <obj_property name="ElementShortName">\core_gen[2].idx12 [11:0]</obj_property>
+      <obj_property name="ObjectShortName">\core_gen[2].idx12 [11:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_multi_cores_top/dut/\core_gen[2].idx13 ">
+      <obj_property name="ElementShortName">\core_gen[2].idx13 [11:0]</obj_property>
+      <obj_property name="ObjectShortName">\core_gen[2].idx13 [11:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_multi_cores_top/dut/\core_gen[2].idx14 ">
+      <obj_property name="ElementShortName">\core_gen[2].idx14 [11:0]</obj_property>
+      <obj_property name="ObjectShortName">\core_gen[2].idx14 [11:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_multi_cores_top/dut/\core_gen[2].idx15 ">
+      <obj_property name="ElementShortName">\core_gen[2].idx15 [11:0]</obj_property>
+      <obj_property name="ObjectShortName">\core_gen[2].idx15 [11:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_multi_cores_top/dut/\core_gen[2].hash_pipeline_i /hash_idx2">
+      <obj_property name="ElementShortName">hash_idx2[14:0]</obj_property>
+      <obj_property name="ObjectShortName">hash_idx2[14:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_multi_cores_top/dut/\core_gen[2].hash_pipeline_i /hash_idx3">
+      <obj_property name="ElementShortName">hash_idx3[14:0]</obj_property>
+      <obj_property name="ObjectShortName">hash_idx3[14:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_multi_cores_top/dut/\core_gen[2].hash_pipeline_i /hash_idx4">
+      <obj_property name="ElementShortName">hash_idx4[14:0]</obj_property>
+      <obj_property name="ObjectShortName">hash_idx4[14:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_multi_cores_top/dut/\core_gen[2].hash_pipeline_i /hash_idx5">
+      <obj_property name="ElementShortName">hash_idx5[14:0]</obj_property>
+      <obj_property name="ObjectShortName">hash_idx5[14:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_multi_cores_top/dut/\core_gen[2].hash_pipeline_i /hash_idx6">
+      <obj_property name="ElementShortName">hash_idx6[14:0]</obj_property>
+      <obj_property name="ObjectShortName">hash_idx6[14:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_multi_cores_top/dut/\core_gen[2].hash_pipeline_i /hash_idx7">
+      <obj_property name="ElementShortName">hash_idx7[14:0]</obj_property>
+      <obj_property name="ObjectShortName">hash_idx7[14:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_multi_cores_top/dut/\core_gen[2].hash_pipeline_i /hash_idx8">
+      <obj_property name="ElementShortName">hash_idx8[14:0]</obj_property>
+      <obj_property name="ObjectShortName">hash_idx8[14:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_multi_cores_top/dut/\core_gen[2].hash_pipeline_i /hash_idx9">
+      <obj_property name="ElementShortName">hash_idx9[14:0]</obj_property>
+      <obj_property name="ObjectShortName">hash_idx9[14:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_multi_cores_top/dut/\core_gen[2].hash_pipeline_i /hash_idx10">
+      <obj_property name="ElementShortName">hash_idx10[14:0]</obj_property>
+      <obj_property name="ObjectShortName">hash_idx10[14:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_multi_cores_top/dut/\core_gen[2].hash_pipeline_i /hash_idx11">
+      <obj_property name="ElementShortName">hash_idx11[14:0]</obj_property>
+      <obj_property name="ObjectShortName">hash_idx11[14:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_multi_cores_top/dut/\core_gen[2].hash_pipeline_i /hash_idx12">
+      <obj_property name="ElementShortName">hash_idx12[14:0]</obj_property>
+      <obj_property name="ObjectShortName">hash_idx12[14:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_multi_cores_top/dut/\core_gen[2].hash_pipeline_i /hash_idx13">
+      <obj_property name="ElementShortName">hash_idx13[14:0]</obj_property>
+      <obj_property name="ObjectShortName">hash_idx13[14:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_multi_cores_top/dut/\core_gen[2].hash_pipeline_i /hash_idx14">
+      <obj_property name="ElementShortName">hash_idx14[14:0]</obj_property>
+      <obj_property name="ObjectShortName">hash_idx14[14:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_multi_cores_top/dut/\core_gen[2].hash_pipeline_i /hash_idx15">
+      <obj_property name="ElementShortName">hash_idx15[14:0]</obj_property>
+      <obj_property name="ObjectShortName">hash_idx15[14:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider469" type="divider">
+      <obj_property name="label">hash_pipeline</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_multi_cores_top/dut/hash_pipeline_0/clk_i">
+      <obj_property name="ElementShortName">clk_i</obj_property>
+      <obj_property name="ObjectShortName">clk_i</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_multi_cores_top/dut/hash_pipeline_0/rst_n_i">
+      <obj_property name="ElementShortName">rst_n_i</obj_property>
+      <obj_property name="ObjectShortName">rst_n_i</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_multi_cores_top/dut/hash_pipeline_0/en">
+      <obj_property name="ElementShortName">en</obj_property>
+      <obj_property name="ObjectShortName">en</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_multi_cores_top/dut/hash_pipeline_0/number_of_hashes">
+      <obj_property name="ElementShortName">number_of_hashes[3:0]</obj_property>
+      <obj_property name="ObjectShortName">number_of_hashes[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_multi_cores_top/dut/hash_pipeline_0/hash_idx1">
+      <obj_property name="ElementShortName">hash_idx1[14:0]</obj_property>
+      <obj_property name="ObjectShortName">hash_idx1[14:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_multi_cores_top/dut/hash_pipeline_0/hash_idx2">
+      <obj_property name="ElementShortName">hash_idx2[14:0]</obj_property>
+      <obj_property name="ObjectShortName">hash_idx2[14:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_multi_cores_top/dut/hash_pipeline_0/hash_idx3">
+      <obj_property name="ElementShortName">hash_idx3[14:0]</obj_property>
+      <obj_property name="ObjectShortName">hash_idx3[14:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_multi_cores_top/dut/hash_pipeline_0/hash_idx4">
+      <obj_property name="ElementShortName">hash_idx4[14:0]</obj_property>
+      <obj_property name="ObjectShortName">hash_idx4[14:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_multi_cores_top/dut/hash_pipeline_0/hash_idx5">
+      <obj_property name="ElementShortName">hash_idx5[14:0]</obj_property>
+      <obj_property name="ObjectShortName">hash_idx5[14:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_multi_cores_top/dut/hash_pipeline_0/hash_idx6">
+      <obj_property name="ElementShortName">hash_idx6[14:0]</obj_property>
+      <obj_property name="ObjectShortName">hash_idx6[14:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_multi_cores_top/dut/hash_pipeline_0/hash_idx7">
+      <obj_property name="ElementShortName">hash_idx7[14:0]</obj_property>
+      <obj_property name="ObjectShortName">hash_idx7[14:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_multi_cores_top/dut/hash_pipeline_0/hash_idx8">
+      <obj_property name="ElementShortName">hash_idx8[14:0]</obj_property>
+      <obj_property name="ObjectShortName">hash_idx8[14:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_multi_cores_top/dut/hash_pipeline_0/hash_idx9">
+      <obj_property name="ElementShortName">hash_idx9[14:0]</obj_property>
+      <obj_property name="ObjectShortName">hash_idx9[14:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_multi_cores_top/dut/hash_pipeline_0/hash_idx10">
+      <obj_property name="ElementShortName">hash_idx10[14:0]</obj_property>
+      <obj_property name="ObjectShortName">hash_idx10[14:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_multi_cores_top/dut/hash_pipeline_0/hash_idx11">
+      <obj_property name="ElementShortName">hash_idx11[14:0]</obj_property>
+      <obj_property name="ObjectShortName">hash_idx11[14:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_multi_cores_top/dut/hash_pipeline_0/hash_idx12">
+      <obj_property name="ElementShortName">hash_idx12[14:0]</obj_property>
+      <obj_property name="ObjectShortName">hash_idx12[14:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_multi_cores_top/dut/hash_pipeline_0/hash_idx13">
+      <obj_property name="ElementShortName">hash_idx13[14:0]</obj_property>
+      <obj_property name="ObjectShortName">hash_idx13[14:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_multi_cores_top/dut/hash_pipeline_0/hash_idx14">
+      <obj_property name="ElementShortName">hash_idx14[14:0]</obj_property>
+      <obj_property name="ObjectShortName">hash_idx14[14:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_multi_cores_top/dut/hash_pipeline_0/hash_idx15">
+      <obj_property name="ElementShortName">hash_idx15[14:0]</obj_property>
+      <obj_property name="ObjectShortName">hash_idx15[14:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_multi_cores_top/dut/hash_pipeline_0/bf_idx_valid_o">
+      <obj_property name="ElementShortName">bf_idx_valid_o</obj_property>
+      <obj_property name="ObjectShortName">bf_idx_valid_o</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_multi_cores_top/dut/hash_pipeline_0/start_i">
+      <obj_property name="ElementShortName">start_i</obj_property>
+      <obj_property name="ObjectShortName">start_i</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_multi_cores_top/dut/hash_pipeline_0/core_id">
+      <obj_property name="ElementShortName">core_id[3:0]</obj_property>
+      <obj_property name="ObjectShortName">core_id[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_multi_cores_top/dut/hash_pipeline_0/gen_finish">
+      <obj_property name="ElementShortName">gen_finish</obj_property>
+      <obj_property name="ObjectShortName">gen_finish</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_multi_cores_top/dut/hash_pipeline_0/data_o">
+      <obj_property name="ElementShortName">data_o[34:0]</obj_property>
+      <obj_property name="ObjectShortName">data_o[34:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_multi_cores_top/dut/hash_pipeline_0/hash_out">
+      <obj_property name="ElementShortName">hash_out[127:0]</obj_property>
+      <obj_property name="ObjectShortName">hash_out[127:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_multi_cores_top/dut/hash_pipeline_0/pwd_gen_valid">
+      <obj_property name="ElementShortName">pwd_gen_valid</obj_property>
+      <obj_property name="ObjectShortName">pwd_gen_valid</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_multi_cores_top/dut/hash_pipeline_0/pwd_gen_finish">
+      <obj_property name="ElementShortName">pwd_gen_finish</obj_property>
+      <obj_property name="ObjectShortName">pwd_gen_finish</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_multi_cores_top/dut/hash_pipeline_0/password_out">
+      <obj_property name="ElementShortName">password_out[34:0]</obj_property>
+      <obj_property name="ObjectShortName">password_out[34:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_multi_cores_top/dut/hash_pipeline_0/md4_data_o">
+      <obj_property name="ElementShortName">md4_data_o[34:0]</obj_property>
+      <obj_property name="ObjectShortName">md4_data_o[34:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_multi_cores_top/dut/hash_pipeline_0/md4_valid_o">
+      <obj_property name="ElementShortName">md4_valid_o</obj_property>
+      <obj_property name="ObjectShortName">md4_valid_o</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_multi_cores_top/dut/hash_pipeline_0/data_r1">
+      <obj_property name="ElementShortName">data_r1[34:0]</obj_property>
+      <obj_property name="ObjectShortName">data_r1[34:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_multi_cores_top/dut/hash_pipeline_0/data_r2">
+      <obj_property name="ElementShortName">data_r2[34:0]</obj_property>
+      <obj_property name="ObjectShortName">data_r2[34:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_multi_cores_top/dut/hash_pipeline_0/data_r3">
+      <obj_property name="ElementShortName">data_r3[34:0]</obj_property>
+      <obj_property name="ObjectShortName">data_r3[34:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_multi_cores_top/dut/hash_pipeline_0/data_r4">
+      <obj_property name="ElementShortName">data_r4[34:0]</obj_property>
+      <obj_property name="ObjectShortName">data_r4[34:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_multi_cores_top/dut/hash_pipeline_0/data_r5">
+      <obj_property name="ElementShortName">data_r5[34:0]</obj_property>
+      <obj_property name="ObjectShortName">data_r5[34:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_multi_cores_top/dut/hash_pipeline_0/PWD_SIZE">
+      <obj_property name="ElementShortName">PWD_SIZE[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PWD_SIZE[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_multi_cores_top/dut/hash_pipeline_0/EXP_PWD_SIZE">
+      <obj_property name="ElementShortName">EXP_PWD_SIZE[31:0]</obj_property>
+      <obj_property name="ObjectShortName">EXP_PWD_SIZE[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider228" type="divider">
+      <obj_property name="label">pwd gen</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider226" type="divider">
+      <obj_property name="label">md4</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider227" type="divider">
+      <obj_property name="label">md4 pe</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider485" type="divider">
+      <obj_property name="label">bf inst</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+</wave_config>

@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:04:56 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Wed Jan 14 22:45:12 2026
+# Process ID: 20950
+# Current directory: /home/cansu/project_32768/project_32768.runs/Top_multi_cores_top_0_0_synth_1
+# Command line: vivado -log Top_multi_cores_top_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top_multi_cores_top_0_0.tcl
+# Log file: /home/cansu/project_32768/project_32768.runs/Top_multi_cores_top_0_0_synth_1/Top_multi_cores_top_0_0.vds
+# Journal file: /home/cansu/project_32768/project_32768.runs/Top_multi_cores_top_0_0_synth_1/vivado.jou
+# Running On: cansu-pc, OS: Linux, CPU Frequency: 3323.161 MHz, CPU Physical cores: 10, Host memory: 67188 MB
+#-----------------------------------------------------------
+source Top_multi_cores_top_0_0.tcl -notrace

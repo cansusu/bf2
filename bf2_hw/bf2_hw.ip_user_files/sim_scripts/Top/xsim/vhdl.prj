@@ -1,0 +1,13 @@
+vhdl xil_defaultlib  \
+"../../../bd/Top/ip/Top_util_ds_buf_0_1/util_ds_buf.vhd" \
+"../../../bd/Top/ip/Top_util_ds_buf_0_1/sim/Top_util_ds_buf_0.vhd" \
+"../../../bd/Top/ip/Top_axi_bram_ctrl_0_0/sim/Top_axi_bram_ctrl_0_0.vhd" \
+"../../../bd/Top/ip/Top_axi_gpio_0_0/sim/Top_axi_gpio_0_0.vhd" \
+"../../../bd/Top/ip/Top_axi_gpio_1_0/sim/Top_axi_gpio_1_0.vhd" \
+"../../../bd/Top/ip/Top_rst_clk_wiz_100M_0/sim/Top_rst_clk_wiz_100M_0.vhd" \
+"../../../bd/Top/ip/Top_axi_gpio_2_0/sim/Top_axi_gpio_2_0.vhd" \
+"../../../bd/Top/ip/Top_axi_gpio_3_0/sim/Top_axi_gpio_3_0.vhd" \
+"../../../bd/Top/ip/Top_axi_gpio_3_1/sim/Top_axi_gpio_3_1.vhd" \
+
+# Do not sort compile order
+nosort
