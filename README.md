@@ -14,8 +14,7 @@ To build the project after changing parameters, run the following command in the
 source ./Scripts/build.tcl
 ```
 
-#Host-side
-## Running
+# Host-side
 
 The program currently reads `hashes.txt` for the matching logic.
 Other configuration options like the PCIe device and the number
@@ -27,7 +26,7 @@ sudo ./target/release/fpgacrack
 ```
 
 
-## Microbenchmarks
+Microbenchmarks:
 
 ```bash
 cargo bench
