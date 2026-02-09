@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "/home/cansu/project_32768/project_32768.runs/Top_multi_cores_top_0_0_synth_1/Top_multi_cores_top_0_0.tcl"
+  variable script "/home/cansu/bf2_hw/bf2_hw.runs/Top_multi_cores_top_0_0_synth_1/Top_multi_cores_top_0_0.tcl"
   variable category "vivado_synth"
 }
 
@@ -74,15 +74,15 @@ set_msg_config -id {Common 17-41} -limit 10000000
 set_msg_config -id {HDL-1065} -limit 10000
 set_param project.vivado.isBlockSynthRun true
 OPTRACE "Creating in-memory project" START { }
-set_param ips.modRefOverrideMrefDirPath /home/cansu/project_32768/project_32768.gen/sources_1/bd/mref
+set_param ips.modRefOverrideMrefDirPath /home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/mref
 create_project -in_memory -part xc7a200tfbg484-2
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir /home/cansu/project_32768/project_32768.cache/wt [current_project]
-set_property parent.project_path /home/cansu/project_32768/project_32768.xpr [current_project]
+set_property webtalk.parent_dir /home/cansu/bf2_hw/bf2_hw.cache/wt [current_project]
+set_property parent.project_path /home/cansu/bf2_hw/bf2_hw.xpr [current_project]
 set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
@@ -92,21 +92,21 @@ set_property ip_repo_paths {
   /home/cansu/bf_different_sizes/Desktop/NiteFury-and-LiteFury/Sample-Projects/Project-0/FPGA/Nitefury-II/ip_repo/myip_datagen_1_0
 } [current_project]
 update_ip_catalog
-set_property ip_output_repo /home/cansu/project_32768/project_32768.cache/ip [current_project]
+set_property ip_output_repo /home/cansu/bf2_hw/bf2_hw.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib -sv {
-  /home/cansu/project_32768/project_32768.srcs/sources_1/imports/sources/hash_pipeline.sv
-  /home/cansu/project_32768/project_32768.srcs/sources_1/new/md4_PE.sv
-  /home/cansu/project_32768/project_32768.srcs/sources_1/imports/sources/md4_top.sv
-  /home/cansu/project_32768/project_32768.srcs/sources_1/imports/sources/pwd_generator.sv
+  /home/cansu/bf2_hw/bf2_hw.srcs/sources_1/new/hash_pipeline.sv
+  /home/cansu/bf2_hw/bf2_hw.srcs/sources_1/new/md4_PE.sv
+  /home/cansu/bf2_hw/bf2_hw.srcs/sources_1/new/md4_top.sv
+  /home/cansu/bf2_hw/bf2_hw.srcs/sources_1/new/pwd_generator.sv
 }
 read_verilog -library xil_defaultlib {
-  /home/cansu/project_32768/project_32768.srcs/sources_1/new/bloom_bram_lookup.v
-  /home/cansu/project_32768/project_32768.srcs/sources_1/imports/sources/multi_pipeline.v
+  /home/cansu/bf2_hw/bf2_hw.srcs/sources_1/new/bloom_bram_lookup.v
+  /home/cansu/bf2_hw/bf2_hw.srcs/sources_1/new/multi_pipeline.v
 }
-read_ip -quiet /home/cansu/project_32768/project_32768.srcs/sources_1/bd/Top/ip/Top_multi_cores_top_0_0/Top_multi_cores_top_0_0.xci
+read_ip -quiet /home/cansu/bf2_hw/bf2_hw.srcs/sources_1/bd/Top/ip/Top_multi_cores_top_0_0/Top_multi_cores_top_0_0.xci
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -120,7 +120,7 @@ foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
 set_param ips.enableIPCacheLiteLoad 1
 OPTRACE "Configure IP Cache" START { }
 
-set cacheID [config_ip_cache -export -no_bom  -dir /home/cansu/project_32768/project_32768.runs/Top_multi_cores_top_0_0_synth_1 -new_name Top_multi_cores_top_0_0 -ip [get_ips Top_multi_cores_top_0_0]]
+set cacheID [config_ip_cache -export -no_bom  -dir /home/cansu/bf2_hw/bf2_hw.runs/Top_multi_cores_top_0_0_synth_1 -new_name Top_multi_cores_top_0_0 -ip [get_ips Top_multi_cores_top_0_0]]
 
 OPTRACE "Configure IP Cache" END { }
 if { $cacheID == "" } {
@@ -175,32 +175,32 @@ create_report "Top_multi_cores_top_0_0_synth_1_synth_report_utilization_0" "repo
 OPTRACE "synth reports" END { }
 
 if { [catch {
-  file copy -force /home/cansu/project_32768/project_32768.runs/Top_multi_cores_top_0_0_synth_1/Top_multi_cores_top_0_0.dcp /home/cansu/project_32768/project_32768.gen/sources_1/bd/Top/ip/Top_multi_cores_top_0_0/Top_multi_cores_top_0_0.dcp
+  file copy -force /home/cansu/bf2_hw/bf2_hw.runs/Top_multi_cores_top_0_0_synth_1/Top_multi_cores_top_0_0.dcp /home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ip/Top_multi_cores_top_0_0/Top_multi_cores_top_0_0.dcp
 } _RESULT ] } { 
   send_msg_id runtcl-3 status "ERROR: Unable to successfully create or copy the sub-design checkpoint file."
   error "ERROR: Unable to successfully create or copy the sub-design checkpoint file."
 }
 
 if { [catch {
-  write_verilog -force -mode synth_stub /home/cansu/project_32768/project_32768.gen/sources_1/bd/Top/ip/Top_multi_cores_top_0_0/Top_multi_cores_top_0_0_stub.v
+  write_verilog -force -mode synth_stub /home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ip/Top_multi_cores_top_0_0/Top_multi_cores_top_0_0_stub.v
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create a Verilog synthesis stub for the sub-design. This may lead to errors in top level synthesis of the design. Error reported: $_RESULT"
 }
 
 if { [catch {
-  write_vhdl -force -mode synth_stub /home/cansu/project_32768/project_32768.gen/sources_1/bd/Top/ip/Top_multi_cores_top_0_0/Top_multi_cores_top_0_0_stub.vhdl
+  write_vhdl -force -mode synth_stub /home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ip/Top_multi_cores_top_0_0/Top_multi_cores_top_0_0_stub.vhdl
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create a VHDL synthesis stub for the sub-design. This may lead to errors in top level synthesis of the design. Error reported: $_RESULT"
 }
 
 if { [catch {
-  write_verilog -force -mode funcsim /home/cansu/project_32768/project_32768.gen/sources_1/bd/Top/ip/Top_multi_cores_top_0_0/Top_multi_cores_top_0_0_sim_netlist.v
+  write_verilog -force -mode funcsim /home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ip/Top_multi_cores_top_0_0/Top_multi_cores_top_0_0_sim_netlist.v
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create the Verilog functional simulation sub-design file. Post-Synthesis Functional Simulation with this file may not be possible or may give incorrect results. Error reported: $_RESULT"
 }
 
 if { [catch {
-  write_vhdl -force -mode funcsim /home/cansu/project_32768/project_32768.gen/sources_1/bd/Top/ip/Top_multi_cores_top_0_0/Top_multi_cores_top_0_0_sim_netlist.vhdl
+  write_vhdl -force -mode funcsim /home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ip/Top_multi_cores_top_0_0/Top_multi_cores_top_0_0_sim_netlist.vhdl
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create the VHDL functional simulation sub-design file. Post-Synthesis Functional Simulation with this file may not be possible or may give incorrect results. Error reported: $_RESULT"
 }
@@ -210,32 +210,32 @@ if { [catch {
 
 
 if { [catch {
-  file copy -force /home/cansu/project_32768/project_32768.runs/Top_multi_cores_top_0_0_synth_1/Top_multi_cores_top_0_0.dcp /home/cansu/project_32768/project_32768.gen/sources_1/bd/Top/ip/Top_multi_cores_top_0_0/Top_multi_cores_top_0_0.dcp
+  file copy -force /home/cansu/bf2_hw/bf2_hw.runs/Top_multi_cores_top_0_0_synth_1/Top_multi_cores_top_0_0.dcp /home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ip/Top_multi_cores_top_0_0/Top_multi_cores_top_0_0.dcp
 } _RESULT ] } { 
   send_msg_id runtcl-3 status "ERROR: Unable to successfully create or copy the sub-design checkpoint file."
   error "ERROR: Unable to successfully create or copy the sub-design checkpoint file."
 }
 
 if { [catch {
-  file rename -force /home/cansu/project_32768/project_32768.runs/Top_multi_cores_top_0_0_synth_1/Top_multi_cores_top_0_0_stub.v /home/cansu/project_32768/project_32768.gen/sources_1/bd/Top/ip/Top_multi_cores_top_0_0/Top_multi_cores_top_0_0_stub.v
+  file rename -force /home/cansu/bf2_hw/bf2_hw.runs/Top_multi_cores_top_0_0_synth_1/Top_multi_cores_top_0_0_stub.v /home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ip/Top_multi_cores_top_0_0/Top_multi_cores_top_0_0_stub.v
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create a Verilog synthesis stub for the sub-design. This may lead to errors in top level synthesis of the design. Error reported: $_RESULT"
 }
 
 if { [catch {
-  file rename -force /home/cansu/project_32768/project_32768.runs/Top_multi_cores_top_0_0_synth_1/Top_multi_cores_top_0_0_stub.vhdl /home/cansu/project_32768/project_32768.gen/sources_1/bd/Top/ip/Top_multi_cores_top_0_0/Top_multi_cores_top_0_0_stub.vhdl
+  file rename -force /home/cansu/bf2_hw/bf2_hw.runs/Top_multi_cores_top_0_0_synth_1/Top_multi_cores_top_0_0_stub.vhdl /home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ip/Top_multi_cores_top_0_0/Top_multi_cores_top_0_0_stub.vhdl
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create a VHDL synthesis stub for the sub-design. This may lead to errors in top level synthesis of the design. Error reported: $_RESULT"
 }
 
 if { [catch {
-  file rename -force /home/cansu/project_32768/project_32768.runs/Top_multi_cores_top_0_0_synth_1/Top_multi_cores_top_0_0_sim_netlist.v /home/cansu/project_32768/project_32768.gen/sources_1/bd/Top/ip/Top_multi_cores_top_0_0/Top_multi_cores_top_0_0_sim_netlist.v
+  file rename -force /home/cansu/bf2_hw/bf2_hw.runs/Top_multi_cores_top_0_0_synth_1/Top_multi_cores_top_0_0_sim_netlist.v /home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ip/Top_multi_cores_top_0_0/Top_multi_cores_top_0_0_sim_netlist.v
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create the Verilog functional simulation sub-design file. Post-Synthesis Functional Simulation with this file may not be possible or may give incorrect results. Error reported: $_RESULT"
 }
 
 if { [catch {
-  file rename -force /home/cansu/project_32768/project_32768.runs/Top_multi_cores_top_0_0_synth_1/Top_multi_cores_top_0_0_sim_netlist.vhdl /home/cansu/project_32768/project_32768.gen/sources_1/bd/Top/ip/Top_multi_cores_top_0_0/Top_multi_cores_top_0_0_sim_netlist.vhdl
+  file rename -force /home/cansu/bf2_hw/bf2_hw.runs/Top_multi_cores_top_0_0_synth_1/Top_multi_cores_top_0_0_sim_netlist.vhdl /home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ip/Top_multi_cores_top_0_0/Top_multi_cores_top_0_0_sim_netlist.vhdl
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create the VHDL functional simulation sub-design file. Post-Synthesis Functional Simulation with this file may not be possible or may give incorrect results. Error reported: $_RESULT"
 }
@@ -243,15 +243,15 @@ if { [catch {
 close [open .end.used_ip_cache.rst w]
 }; # end if cacheID 
 
-if {[file isdir /home/cansu/project_32768/project_32768.ip_user_files/ip/Top_multi_cores_top_0_0]} {
+if {[file isdir /home/cansu/bf2_hw/bf2_hw.ip_user_files/ip/Top_multi_cores_top_0_0]} {
   catch { 
-    file copy -force /home/cansu/project_32768/project_32768.gen/sources_1/bd/Top/ip/Top_multi_cores_top_0_0/Top_multi_cores_top_0_0_stub.v /home/cansu/project_32768/project_32768.ip_user_files/ip/Top_multi_cores_top_0_0
+    file copy -force /home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ip/Top_multi_cores_top_0_0/Top_multi_cores_top_0_0_stub.v /home/cansu/bf2_hw/bf2_hw.ip_user_files/ip/Top_multi_cores_top_0_0
   }
 }
 
-if {[file isdir /home/cansu/project_32768/project_32768.ip_user_files/ip/Top_multi_cores_top_0_0]} {
+if {[file isdir /home/cansu/bf2_hw/bf2_hw.ip_user_files/ip/Top_multi_cores_top_0_0]} {
   catch { 
-    file copy -force /home/cansu/project_32768/project_32768.gen/sources_1/bd/Top/ip/Top_multi_cores_top_0_0/Top_multi_cores_top_0_0_stub.vhdl /home/cansu/project_32768/project_32768.ip_user_files/ip/Top_multi_cores_top_0_0
+    file copy -force /home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ip/Top_multi_cores_top_0_0/Top_multi_cores_top_0_0_stub.vhdl /home/cansu/bf2_hw/bf2_hw.ip_user_files/ip/Top_multi_cores_top_0_0
   }
 }
 file delete __synthesis_is_running__

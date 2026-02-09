@@ -11,7 +11,7 @@
     ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 
 source Top_axi_gpio_3_1.tcl -notrace
-create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1280.625 ; gain = 3.023 ; free physical = 47021 ; free virtual = 53689
+create_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1332.684 ; gain = 0.023 ; free physical = 48943 ; free virtual = 55536
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/cansu/ip_repo/axi_reg_1_0'.
 WARNING: [IP_Flow 19-2207] Repository '/home/cansu/ip_repo/axi_reg_1_0' already exists; ignoring attempt to add it again.
@@ -27,11 +27,11 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200
 INFO: [Device 21-403] Loading part xc7a200tfbg484-2
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 14410
+INFO: [Synth 8-7075] Helper process launched with PID 11242
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2060.863 ; gain = 377.770 ; free physical = 47709 ; free virtual = 54384
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2060.234 ; gain = 376.801 ; free physical = 45233 ; free virtual = 51832
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'Top_axi_gpio_3_1' [/home/cansu/4096_bf_trytests/4096_bf_trytests.gen/sources_1/bd/Top/ip/Top_axi_gpio_3_1/synth/Top_axi_gpio_3_1.vhd:84]
+INFO: [Synth 8-638] synthesizing module 'Top_axi_gpio_3_1' [/home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ip/Top_axi_gpio_3_1/synth/Top_axi_gpio_3_1.vhd:84]
 	Parameter C_FAMILY bound to: artix7 - type: string 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 9 - type: integer 
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
@@ -47,83 +47,83 @@ INFO: [Synth 8-638] synthesizing module 'Top_axi_gpio_3_1' [/home/cansu/4096_bf_
 	Parameter C_IS_DUAL bound to: 0 - type: integer 
 	Parameter C_DOUT_DEFAULT_2 bound to: 32'b00000000000000000000000000000000 
 	Parameter C_TRI_DEFAULT_2 bound to: 32'b11111111111111111111111111111111 
-INFO: [Synth 8-3491] module 'axi_gpio' declared at '/home/cansu/4096_bf_trytests/4096_bf_trytests.gen/sources_1/bd/Top/ipshared/18b7/hdl/axi_gpio_v2_0_vh_rfs.vhd:1265' bound to instance 'U0' of component 'axi_gpio' [/home/cansu/4096_bf_trytests/4096_bf_trytests.gen/sources_1/bd/Top/ip/Top_axi_gpio_3_1/synth/Top_axi_gpio_3_1.vhd:168]
-INFO: [Synth 8-638] synthesizing module 'axi_gpio' [/home/cansu/4096_bf_trytests/4096_bf_trytests.gen/sources_1/bd/Top/ipshared/18b7/hdl/axi_gpio_v2_0_vh_rfs.vhd:1351]
-INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif' [/home/cansu/4096_bf_trytests/4096_bf_trytests.gen/sources_1/bd/Top/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
-INFO: [Synth 8-638] synthesizing module 'slave_attachment' [/home/cansu/4096_bf_trytests/4096_bf_trytests.gen/sources_1/bd/Top/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
-INFO: [Synth 8-638] synthesizing module 'address_decoder' [/home/cansu/4096_bf_trytests/4096_bf_trytests.gen/sources_1/bd/Top/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
-INFO: [Synth 8-638] synthesizing module 'pselect_f' [/home/cansu/4096_bf_trytests/4096_bf_trytests.gen/sources_1/bd/Top/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-256] done synthesizing module 'pselect_f' (0#1) [/home/cansu/4096_bf_trytests/4096_bf_trytests.gen/sources_1/bd/Top/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized0' [/home/cansu/4096_bf_trytests/4096_bf_trytests.gen/sources_1/bd/Top/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized0' (0#1) [/home/cansu/4096_bf_trytests/4096_bf_trytests.gen/sources_1/bd/Top/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized1' [/home/cansu/4096_bf_trytests/4096_bf_trytests.gen/sources_1/bd/Top/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized1' (0#1) [/home/cansu/4096_bf_trytests/4096_bf_trytests.gen/sources_1/bd/Top/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized2' [/home/cansu/4096_bf_trytests/4096_bf_trytests.gen/sources_1/bd/Top/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized2' (0#1) [/home/cansu/4096_bf_trytests/4096_bf_trytests.gen/sources_1/bd/Top/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-256] done synthesizing module 'address_decoder' (0#1) [/home/cansu/4096_bf_trytests/4096_bf_trytests.gen/sources_1/bd/Top/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
-INFO: [Synth 8-226] default block is never used [/home/cansu/4096_bf_trytests/4096_bf_trytests.gen/sources_1/bd/Top/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2550]
-INFO: [Synth 8-256] done synthesizing module 'slave_attachment' (0#1) [/home/cansu/4096_bf_trytests/4096_bf_trytests.gen/sources_1/bd/Top/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
-INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif' (0#1) [/home/cansu/4096_bf_trytests/4096_bf_trytests.gen/sources_1/bd/Top/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
-INFO: [Synth 8-638] synthesizing module 'GPIO_Core' [/home/cansu/4096_bf_trytests/4096_bf_trytests.gen/sources_1/bd/Top/ipshared/18b7/hdl/axi_gpio_v2_0_vh_rfs.vhd:178]
-INFO: [Synth 8-226] default block is never used [/home/cansu/4096_bf_trytests/4096_bf_trytests.gen/sources_1/bd/Top/ipshared/18b7/hdl/axi_gpio_v2_0_vh_rfs.vhd:443]
-INFO: [Synth 8-638] synthesizing module 'cdc_sync' [/home/cansu/4096_bf_trytests/4096_bf_trytests.gen/sources_1/bd/Top/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-3491] module 'axi_gpio' declared at '/home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ipshared/18b7/hdl/axi_gpio_v2_0_vh_rfs.vhd:1265' bound to instance 'U0' of component 'axi_gpio' [/home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ip/Top_axi_gpio_3_1/synth/Top_axi_gpio_3_1.vhd:168]
+INFO: [Synth 8-638] synthesizing module 'axi_gpio' [/home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ipshared/18b7/hdl/axi_gpio_v2_0_vh_rfs.vhd:1351]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif' [/home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-638] synthesizing module 'slave_attachment' [/home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-638] synthesizing module 'address_decoder' [/home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-638] synthesizing module 'pselect_f' [/home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f' (0#1) [/home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized0' [/home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized0' (0#1) [/home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized1' [/home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized1' (0#1) [/home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized2' [/home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized2' (0#1) [/home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'address_decoder' (0#1) [/home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-226] default block is never used [/home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2550]
+INFO: [Synth 8-256] done synthesizing module 'slave_attachment' (0#1) [/home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif' (0#1) [/home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-638] synthesizing module 'GPIO_Core' [/home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ipshared/18b7/hdl/axi_gpio_v2_0_vh_rfs.vhd:178]
+INFO: [Synth 8-226] default block is never used [/home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ipshared/18b7/hdl/axi_gpio_v2_0_vh_rfs.vhd:443]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync' [/home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [/home/cansu/4096_bf_trytests/4096_bf_trytests.gen/sources_1/bd/Top/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:736]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [/home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:736]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [/home/cansu/4096_bf_trytests/4096_bf_trytests.gen/sources_1/bd/Top/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:736]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [/home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:736]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [/home/cansu/4096_bf_trytests/4096_bf_trytests.gen/sources_1/bd/Top/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:736]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [/home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:736]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [/home/cansu/4096_bf_trytests/4096_bf_trytests.gen/sources_1/bd/Top/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:736]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [/home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:736]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [/home/cansu/4096_bf_trytests/4096_bf_trytests.gen/sources_1/bd/Top/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:772]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [/home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:772]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [/home/cansu/4096_bf_trytests/4096_bf_trytests.gen/sources_1/bd/Top/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:772]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [/home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:772]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [/home/cansu/4096_bf_trytests/4096_bf_trytests.gen/sources_1/bd/Top/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:772]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [/home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:772]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [/home/cansu/4096_bf_trytests/4096_bf_trytests.gen/sources_1/bd/Top/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:772]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [/home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:772]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [/home/cansu/4096_bf_trytests/4096_bf_trytests.gen/sources_1/bd/Top/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:788]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [/home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:788]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [/home/cansu/4096_bf_trytests/4096_bf_trytests.gen/sources_1/bd/Top/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:788]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [/home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:788]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [/home/cansu/4096_bf_trytests/4096_bf_trytests.gen/sources_1/bd/Top/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:788]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [/home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:788]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [/home/cansu/4096_bf_trytests/4096_bf_trytests.gen/sources_1/bd/Top/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:788]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [/home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:788]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [/home/cansu/4096_bf_trytests/4096_bf_trytests.gen/sources_1/bd/Top/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:804]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [/home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:804]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [/home/cansu/4096_bf_trytests/4096_bf_trytests.gen/sources_1/bd/Top/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:804]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [/home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:804]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [/home/cansu/4096_bf_trytests/4096_bf_trytests.gen/sources_1/bd/Top/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:804]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [/home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:804]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [/home/cansu/4096_bf_trytests/4096_bf_trytests.gen/sources_1/bd/Top/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:804]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [/home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:804]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [/home/cansu/4096_bf_trytests/4096_bf_trytests.gen/sources_1/bd/Top/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:821]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [/home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:821]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [/home/cansu/4096_bf_trytests/4096_bf_trytests.gen/sources_1/bd/Top/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:821]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [/home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:821]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [/home/cansu/4096_bf_trytests/4096_bf_trytests.gen/sources_1/bd/Top/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:821]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [/home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:821]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [/home/cansu/4096_bf_trytests/4096_bf_trytests.gen/sources_1/bd/Top/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:821]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [/home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:821]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [/home/cansu/4096_bf_trytests/4096_bf_trytests.gen/sources_1/bd/Top/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:837]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [/home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:837]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [/home/cansu/4096_bf_trytests/4096_bf_trytests.gen/sources_1/bd/Top/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:837]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [/home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:837]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [/home/cansu/4096_bf_trytests/4096_bf_trytests.gen/sources_1/bd/Top/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:837]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [/home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:837]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [/home/cansu/4096_bf_trytests/4096_bf_trytests.gen/sources_1/bd/Top/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:837]
-INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (0#1) [/home/cansu/4096_bf_trytests/4096_bf_trytests.gen/sources_1/bd/Top/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
-INFO: [Synth 8-256] done synthesizing module 'GPIO_Core' (0#1) [/home/cansu/4096_bf_trytests/4096_bf_trytests.gen/sources_1/bd/Top/ipshared/18b7/hdl/axi_gpio_v2_0_vh_rfs.vhd:178]
-INFO: [Synth 8-256] done synthesizing module 'axi_gpio' (0#1) [/home/cansu/4096_bf_trytests/4096_bf_trytests.gen/sources_1/bd/Top/ipshared/18b7/hdl/axi_gpio_v2_0_vh_rfs.vhd:1351]
-INFO: [Synth 8-256] done synthesizing module 'Top_axi_gpio_3_1' (0#1) [/home/cansu/4096_bf_trytests/4096_bf_trytests.gen/sources_1/bd/Top/ip/Top_axi_gpio_3_1/synth/Top_axi_gpio_3_1.vhd:84]
-WARNING: [Synth 8-6014] Unused sequential element Not_Dual.ALLOUT_ND.READ_REG_GEN[0].GPIO_DBus_i_reg was removed.  [/home/cansu/4096_bf_trytests/4096_bf_trytests.gen/sources_1/bd/Top/ipshared/18b7/hdl/axi_gpio_v2_0_vh_rfs.vhd:319]
-WARNING: [Synth 8-6014] Unused sequential element Not_Dual.ALLOUT_ND.READ_REG_GEN[1].GPIO_DBus_i_reg was removed.  [/home/cansu/4096_bf_trytests/4096_bf_trytests.gen/sources_1/bd/Top/ipshared/18b7/hdl/axi_gpio_v2_0_vh_rfs.vhd:319]
-WARNING: [Synth 8-6014] Unused sequential element Not_Dual.ALLOUT_ND.READ_REG_GEN[2].GPIO_DBus_i_reg was removed.  [/home/cansu/4096_bf_trytests/4096_bf_trytests.gen/sources_1/bd/Top/ipshared/18b7/hdl/axi_gpio_v2_0_vh_rfs.vhd:319]
-WARNING: [Synth 8-6014] Unused sequential element Not_Dual.ALLOUT_ND.READ_REG_GEN[3].GPIO_DBus_i_reg was removed.  [/home/cansu/4096_bf_trytests/4096_bf_trytests.gen/sources_1/bd/Top/ipshared/18b7/hdl/axi_gpio_v2_0_vh_rfs.vhd:319]
-WARNING: [Synth 8-6014] Unused sequential element Not_Dual.gpio_Data_In_reg was removed.  [/home/cansu/4096_bf_trytests/4096_bf_trytests.gen/sources_1/bd/Top/ipshared/18b7/hdl/axi_gpio_v2_0_vh_rfs.vhd:486]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [/home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:837]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (0#1) [/home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'GPIO_Core' (0#1) [/home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ipshared/18b7/hdl/axi_gpio_v2_0_vh_rfs.vhd:178]
+INFO: [Synth 8-256] done synthesizing module 'axi_gpio' (0#1) [/home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ipshared/18b7/hdl/axi_gpio_v2_0_vh_rfs.vhd:1351]
+INFO: [Synth 8-256] done synthesizing module 'Top_axi_gpio_3_1' (0#1) [/home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ip/Top_axi_gpio_3_1/synth/Top_axi_gpio_3_1.vhd:84]
+WARNING: [Synth 8-6014] Unused sequential element Not_Dual.ALLOUT_ND.READ_REG_GEN[0].GPIO_DBus_i_reg was removed.  [/home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ipshared/18b7/hdl/axi_gpio_v2_0_vh_rfs.vhd:319]
+WARNING: [Synth 8-6014] Unused sequential element Not_Dual.ALLOUT_ND.READ_REG_GEN[1].GPIO_DBus_i_reg was removed.  [/home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ipshared/18b7/hdl/axi_gpio_v2_0_vh_rfs.vhd:319]
+WARNING: [Synth 8-6014] Unused sequential element Not_Dual.ALLOUT_ND.READ_REG_GEN[2].GPIO_DBus_i_reg was removed.  [/home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ipshared/18b7/hdl/axi_gpio_v2_0_vh_rfs.vhd:319]
+WARNING: [Synth 8-6014] Unused sequential element Not_Dual.ALLOUT_ND.READ_REG_GEN[3].GPIO_DBus_i_reg was removed.  [/home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ipshared/18b7/hdl/axi_gpio_v2_0_vh_rfs.vhd:319]
+WARNING: [Synth 8-6014] Unused sequential element Not_Dual.gpio_Data_In_reg was removed.  [/home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ipshared/18b7/hdl/axi_gpio_v2_0_vh_rfs.vhd:486]
 WARNING: [Synth 8-7129] Port prmry_aclk in module cdc_sync is either unconnected or has no load
 WARNING: [Synth 8-7129] Port prmry_resetn in module cdc_sync is either unconnected or has no load
 WARNING: [Synth 8-7129] Port prmry_in in module cdc_sync is either unconnected or has no load
@@ -183,57 +183,57 @@ WARNING: [Synth 8-7129] Port S_AXI_WSTRB[2] in module slave_attachment is either
 WARNING: [Synth 8-7129] Port S_AXI_WSTRB[1] in module slave_attachment is either unconnected or has no load
 WARNING: [Synth 8-7129] Port S_AXI_WSTRB[0] in module slave_attachment is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2135.801 ; gain = 452.707 ; free physical = 47262 ; free virtual = 53944
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2136.141 ; gain = 452.707 ; free physical = 45098 ; free virtual = 51697
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2150.645 ; gain = 467.551 ; free physical = 47213 ; free virtual = 53896
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2148.016 ; gain = 464.582 ; free physical = 45094 ; free virtual = 51693
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2150.645 ; gain = 467.551 ; free physical = 47213 ; free virtual = 53896
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2148.016 ; gain = 464.582 ; free physical = 45094 ; free virtual = 51693
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2153.613 ; gain = 0.000 ; free physical = 47167 ; free virtual = 53850
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2150.984 ; gain = 0.000 ; free physical = 45089 ; free virtual = 51689
 INFO: [Netlist 29-17] Analyzing 24 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [/home/cansu/4096_bf_trytests/4096_bf_trytests.gen/sources_1/bd/Top/ip/Top_axi_gpio_3_1/Top_axi_gpio_3_1_ooc.xdc] for cell 'U0'
-Finished Parsing XDC File [/home/cansu/4096_bf_trytests/4096_bf_trytests.gen/sources_1/bd/Top/ip/Top_axi_gpio_3_1/Top_axi_gpio_3_1_ooc.xdc] for cell 'U0'
-Parsing XDC File [/home/cansu/4096_bf_trytests/4096_bf_trytests.gen/sources_1/bd/Top/ip/Top_axi_gpio_3_1/Top_axi_gpio_3_1_board.xdc] for cell 'U0'
-Finished Parsing XDC File [/home/cansu/4096_bf_trytests/4096_bf_trytests.gen/sources_1/bd/Top/ip/Top_axi_gpio_3_1/Top_axi_gpio_3_1_board.xdc] for cell 'U0'
-Parsing XDC File [/home/cansu/4096_bf_trytests/4096_bf_trytests.gen/sources_1/bd/Top/ip/Top_axi_gpio_3_1/Top_axi_gpio_3_1.xdc] for cell 'U0'
-Finished Parsing XDC File [/home/cansu/4096_bf_trytests/4096_bf_trytests.gen/sources_1/bd/Top/ip/Top_axi_gpio_3_1/Top_axi_gpio_3_1.xdc] for cell 'U0'
-Parsing XDC File [/home/cansu/4096_bf_trytests/4096_bf_trytests.runs/Top_axi_gpio_3_1_synth_1/dont_touch.xdc]
-Finished Parsing XDC File [/home/cansu/4096_bf_trytests/4096_bf_trytests.runs/Top_axi_gpio_3_1_synth_1/dont_touch.xdc]
+Parsing XDC File [/home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ip/Top_axi_gpio_3_1/Top_axi_gpio_3_1_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [/home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ip/Top_axi_gpio_3_1/Top_axi_gpio_3_1_ooc.xdc] for cell 'U0'
+Parsing XDC File [/home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ip/Top_axi_gpio_3_1/Top_axi_gpio_3_1_board.xdc] for cell 'U0'
+Finished Parsing XDC File [/home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ip/Top_axi_gpio_3_1/Top_axi_gpio_3_1_board.xdc] for cell 'U0'
+Parsing XDC File [/home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ip/Top_axi_gpio_3_1/Top_axi_gpio_3_1.xdc] for cell 'U0'
+Finished Parsing XDC File [/home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ip/Top_axi_gpio_3_1/Top_axi_gpio_3_1.xdc] for cell 'U0'
+Parsing XDC File [/home/cansu/bf2_hw/bf2_hw.runs/Top_axi_gpio_3_1_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/cansu/bf2_hw/bf2_hw.runs/Top_axi_gpio_3_1_synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2295.395 ; gain = 0.000 ; free physical = 46092 ; free virtual = 52769
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2289.766 ; gain = 0.000 ; free physical = 45024 ; free virtual = 51625
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 24 instances were transformed.
   FDR => FDRE: 24 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2295.395 ; gain = 0.000 ; free physical = 46088 ; free virtual = 52764
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2289.766 ; gain = 0.000 ; free physical = 45024 ; free virtual = 51625
 INFO: [Designutils 20-5008] Incremental synthesis strategy off
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2295.395 ; gain = 612.301 ; free physical = 47596 ; free virtual = 54272
+Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2289.766 ; gain = 606.332 ; free physical = 45232 ; free virtual = 51834
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a200tfbg484-2
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2295.395 ; gain = 612.301 ; free physical = 47593 ; free virtual = 54269
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2289.766 ; gain = 606.332 ; free physical = 45232 ; free virtual = 51834
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property KEEP_HIERARCHY = SOFT for U0. (constraint file  /home/cansu/4096_bf_trytests/4096_bf_trytests.runs/Top_axi_gpio_3_1_synth_1/dont_touch.xdc, line 9).
+Applied set_property KEEP_HIERARCHY = SOFT for U0. (constraint file  /home/cansu/bf2_hw/bf2_hw.runs/Top_axi_gpio_3_1_synth_1/dont_touch.xdc, line 9).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2295.395 ; gain = 612.301 ; free physical = 47586 ; free virtual = 54262
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2289.766 ; gain = 606.332 ; free physical = 45232 ; free virtual = 51834
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'slave_attachment'
 ---------------------------------------------------------------------------------------------------
@@ -246,7 +246,7 @@ INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'slave
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'slave_attachment'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 2295.395 ; gain = 612.301 ; free physical = 47380 ; free virtual = 54057
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 2289.766 ; gain = 606.332 ; free physical = 45230 ; free virtual = 51833
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -348,25 +348,25 @@ INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3
 INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[2].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio.
 INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[3].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 2295.395 ; gain = 612.301 ; free physical = 46890 ; free virtual = 53567
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 2289.766 ; gain = 606.332 ; free physical = 45205 ; free virtual = 51808
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 2295.395 ; gain = 612.301 ; free physical = 44434 ; free virtual = 51116
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 2289.766 ; gain = 606.332 ; free physical = 46964 ; free virtual = 53576
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 2295.395 ; gain = 612.301 ; free physical = 44423 ; free virtual = 51106
+Finished Timing Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 2289.766 ; gain = 606.332 ; free physical = 46947 ; free virtual = 53559
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 2295.395 ; gain = 612.301 ; free physical = 44413 ; free virtual = 51090
+Finished Technology Mapping : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 2289.766 ; gain = 606.332 ; free physical = 46940 ; free virtual = 53553
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -384,37 +384,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 2295.395 ; gain = 612.301 ; free physical = 44021 ; free virtual = 50740
+Finished IO Insertion : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 2289.766 ; gain = 606.332 ; free physical = 45558 ; free virtual = 52170
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 2295.395 ; gain = 612.301 ; free physical = 44021 ; free virtual = 50740
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 2289.766 ; gain = 606.332 ; free physical = 45558 ; free virtual = 52170
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 2295.395 ; gain = 612.301 ; free physical = 44020 ; free virtual = 50740
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 2289.766 ; gain = 606.332 ; free physical = 45553 ; free virtual = 52165
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 2295.395 ; gain = 612.301 ; free physical = 44019 ; free virtual = 50739
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 2289.766 ; gain = 606.332 ; free physical = 45553 ; free virtual = 52164
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 2295.395 ; gain = 612.301 ; free physical = 44019 ; free virtual = 50739
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 2289.766 ; gain = 606.332 ; free physical = 45552 ; free virtual = 52163
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 2295.395 ; gain = 612.301 ; free physical = 44019 ; free virtual = 50739
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 2289.766 ; gain = 606.332 ; free physical = 45551 ; free virtual = 52163
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -440,16 +440,16 @@ Report Cell Usage:
 |8     |FDSE |     1|
 +------+-----+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 2295.395 ; gain = 612.301 ; free physical = 44018 ; free virtual = 50739
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 2289.766 ; gain = 606.332 ; free physical = 45550 ; free virtual = 52162
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 37 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 2295.395 ; gain = 467.551 ; free physical = 43998 ; free virtual = 50719
-Synthesis Optimization Complete : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 2295.395 ; gain = 612.301 ; free physical = 43997 ; free virtual = 50719
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 2289.766 ; gain = 464.582 ; free physical = 45540 ; free virtual = 52151
+Synthesis Optimization Complete : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 2289.766 ; gain = 606.332 ; free physical = 45538 ; free virtual = 52150
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2295.395 ; gain = 0.000 ; free physical = 43992 ; free virtual = 50714
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2289.766 ; gain = 0.000 ; free physical = 45536 ; free virtual = 52148
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2295.395 ; gain = 0.000 ; free physical = 44202 ; free virtual = 50911
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2289.766 ; gain = 0.000 ; free physical = 45690 ; free virtual = 52302
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
@@ -457,12 +457,12 @@ Synth Design complete | Checksum: 44806c6c
 INFO: [Common 17-83] Releasing license: Synthesis
 95 Infos, 102 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:38 ; elapsed = 00:00:35 . Memory (MB): peak = 2295.395 ; gain = 981.051 ; free physical = 44191 ; free virtual = 50900
-INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1633.830; main = 1333.451; forked = 307.484
-INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3239.203; main = 2295.398; forked = 975.820
-INFO: [Common 17-1381] The checkpoint '/home/cansu/4096_bf_trytests/4096_bf_trytests.runs/Top_axi_gpio_3_1_synth_1/Top_axi_gpio_3_1.dcp' has been generated.
+synth_design: Time (s): cpu = 00:00:43 ; elapsed = 00:00:41 . Memory (MB): peak = 2289.766 ; gain = 957.082 ; free physical = 45686 ; free virtual = 52297
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1631.131; main = 1326.496; forked = 304.635
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3233.578; main = 2289.770; forked = 975.824
+INFO: [Common 17-1381] The checkpoint '/home/cansu/bf2_hw/bf2_hw.runs/Top_axi_gpio_3_1_synth_1/Top_axi_gpio_3_1.dcp' has been generated.
 INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP Top_axi_gpio_3_1, cache-ID = 2772877e4012db3a
 INFO: [Coretcl 2-1174] Renamed 7 cell refs.
-INFO: [Common 17-1381] The checkpoint '/home/cansu/4096_bf_trytests/4096_bf_trytests.runs/Top_axi_gpio_3_1_synth_1/Top_axi_gpio_3_1.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint '/home/cansu/bf2_hw/bf2_hw.runs/Top_axi_gpio_3_1_synth_1/Top_axi_gpio_3_1.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file Top_axi_gpio_3_1_utilization_synth.rpt -pb Top_axi_gpio_3_1_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Thu Nov  6 14:52:18 2025...
+INFO: [Common 17-206] Exiting Vivado at Mon Feb  9 18:07:53 2026...

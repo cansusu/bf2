@@ -71,7 +71,4 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Top_auto_cc
 # IP: bd/Top/ip/Top_auto_cc_1/Top_auto_cc_1.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Top_auto_cc_1 || ORIG_REF_NAME==Top_auto_cc_1} -quiet] -quiet
 
-# IP: bd/Top/ip/Top_s00_mmu_0/Top_s00_mmu_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Top_s00_mmu_0 || ORIG_REF_NAME==Top_s00_mmu_0} -quiet] -quiet
-
-# XDC: /home/cansu/project_32768/project_32768.gen/sources_1/bd/Top/Top_ooc.xdc
+# XDC: /home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/Top_ooc.xdc

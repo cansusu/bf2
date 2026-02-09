@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "/home/cansu/project_32768/project_32768.runs/Top_xbar_1_synth_1/Top_xbar_1.tcl"
+  variable script "/home/cansu/bf2_hw/bf2_hw.runs/Top_xbar_1_synth_1/Top_xbar_1.tcl"
   variable category "vivado_synth"
 }
 
@@ -70,7 +70,6 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "Top_xbar_1_synth_1" START { ROLLUP_AUTO }
-set_msg_config -id {Common 17-41} -limit 10000000
 set_msg_config -id {HDL-1065} -limit 10000
 set_param project.vivado.isBlockSynthRun true
 set_msg_config -msgmgr_mode ooc_run
@@ -81,8 +80,8 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir /home/cansu/project_32768/project_32768.cache/wt [current_project]
-set_property parent.project_path /home/cansu/project_32768/project_32768.xpr [current_project]
+set_property webtalk.parent_dir /home/cansu/bf2_hw/bf2_hw.cache/wt [current_project]
+set_property parent.project_path /home/cansu/bf2_hw/bf2_hw.xpr [current_project]
 set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
@@ -92,12 +91,12 @@ set_property ip_repo_paths {
   /home/cansu/bf_different_sizes/Desktop/NiteFury-and-LiteFury/Sample-Projects/Project-0/FPGA/Nitefury-II/ip_repo/myip_datagen_1_0
 } [current_project]
 update_ip_catalog
-set_property ip_output_repo /home/cansu/project_32768/project_32768.cache/ip [current_project]
+set_property ip_output_repo /home/cansu/bf2_hw/bf2_hw.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_ip -quiet /home/cansu/project_32768/project_32768.srcs/sources_1/bd/Top/ip/Top_xbar_1/Top_xbar_1.xci
-set_property used_in_implementation false [get_files -all /home/cansu/project_32768/project_32768.gen/sources_1/bd/Top/ip/Top_xbar_1/Top_xbar_1_ooc.xdc]
+read_ip -quiet /home/cansu/bf2_hw/bf2_hw.srcs/sources_1/bd/Top/ip/Top_xbar_1/Top_xbar_1.xci
+set_property used_in_implementation false [get_files -all /home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ip/Top_xbar_1/Top_xbar_1_ooc.xdc]
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -113,7 +112,7 @@ set_property used_in_implementation false [get_files dont_touch.xdc]
 set_param ips.enableIPCacheLiteLoad 1
 OPTRACE "Configure IP Cache" START { }
 
-set cacheID [config_ip_cache -export -no_bom  -dir /home/cansu/project_32768/project_32768.runs/Top_xbar_1_synth_1 -new_name Top_xbar_1 -ip [get_ips Top_xbar_1]]
+set cacheID [config_ip_cache -export -no_bom  -dir /home/cansu/bf2_hw/bf2_hw.runs/Top_xbar_1_synth_1 -new_name Top_xbar_1 -ip [get_ips Top_xbar_1]]
 
 OPTRACE "Configure IP Cache" END { }
 if { $cacheID == "" } {
@@ -168,32 +167,32 @@ create_report "Top_xbar_1_synth_1_synth_report_utilization_0" "report_utilizatio
 OPTRACE "synth reports" END { }
 
 if { [catch {
-  file copy -force /home/cansu/project_32768/project_32768.runs/Top_xbar_1_synth_1/Top_xbar_1.dcp /home/cansu/project_32768/project_32768.gen/sources_1/bd/Top/ip/Top_xbar_1/Top_xbar_1.dcp
+  file copy -force /home/cansu/bf2_hw/bf2_hw.runs/Top_xbar_1_synth_1/Top_xbar_1.dcp /home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ip/Top_xbar_1/Top_xbar_1.dcp
 } _RESULT ] } { 
   send_msg_id runtcl-3 status "ERROR: Unable to successfully create or copy the sub-design checkpoint file."
   error "ERROR: Unable to successfully create or copy the sub-design checkpoint file."
 }
 
 if { [catch {
-  write_verilog -force -mode synth_stub /home/cansu/project_32768/project_32768.gen/sources_1/bd/Top/ip/Top_xbar_1/Top_xbar_1_stub.v
+  write_verilog -force -mode synth_stub /home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ip/Top_xbar_1/Top_xbar_1_stub.v
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create a Verilog synthesis stub for the sub-design. This may lead to errors in top level synthesis of the design. Error reported: $_RESULT"
 }
 
 if { [catch {
-  write_vhdl -force -mode synth_stub /home/cansu/project_32768/project_32768.gen/sources_1/bd/Top/ip/Top_xbar_1/Top_xbar_1_stub.vhdl
+  write_vhdl -force -mode synth_stub /home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ip/Top_xbar_1/Top_xbar_1_stub.vhdl
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create a VHDL synthesis stub for the sub-design. This may lead to errors in top level synthesis of the design. Error reported: $_RESULT"
 }
 
 if { [catch {
-  write_verilog -force -mode funcsim /home/cansu/project_32768/project_32768.gen/sources_1/bd/Top/ip/Top_xbar_1/Top_xbar_1_sim_netlist.v
+  write_verilog -force -mode funcsim /home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ip/Top_xbar_1/Top_xbar_1_sim_netlist.v
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create the Verilog functional simulation sub-design file. Post-Synthesis Functional Simulation with this file may not be possible or may give incorrect results. Error reported: $_RESULT"
 }
 
 if { [catch {
-  write_vhdl -force -mode funcsim /home/cansu/project_32768/project_32768.gen/sources_1/bd/Top/ip/Top_xbar_1/Top_xbar_1_sim_netlist.vhdl
+  write_vhdl -force -mode funcsim /home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ip/Top_xbar_1/Top_xbar_1_sim_netlist.vhdl
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create the VHDL functional simulation sub-design file. Post-Synthesis Functional Simulation with this file may not be possible or may give incorrect results. Error reported: $_RESULT"
 }
@@ -203,32 +202,32 @@ if { [catch {
 
 
 if { [catch {
-  file copy -force /home/cansu/project_32768/project_32768.runs/Top_xbar_1_synth_1/Top_xbar_1.dcp /home/cansu/project_32768/project_32768.gen/sources_1/bd/Top/ip/Top_xbar_1/Top_xbar_1.dcp
+  file copy -force /home/cansu/bf2_hw/bf2_hw.runs/Top_xbar_1_synth_1/Top_xbar_1.dcp /home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ip/Top_xbar_1/Top_xbar_1.dcp
 } _RESULT ] } { 
   send_msg_id runtcl-3 status "ERROR: Unable to successfully create or copy the sub-design checkpoint file."
   error "ERROR: Unable to successfully create or copy the sub-design checkpoint file."
 }
 
 if { [catch {
-  file rename -force /home/cansu/project_32768/project_32768.runs/Top_xbar_1_synth_1/Top_xbar_1_stub.v /home/cansu/project_32768/project_32768.gen/sources_1/bd/Top/ip/Top_xbar_1/Top_xbar_1_stub.v
+  file rename -force /home/cansu/bf2_hw/bf2_hw.runs/Top_xbar_1_synth_1/Top_xbar_1_stub.v /home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ip/Top_xbar_1/Top_xbar_1_stub.v
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create a Verilog synthesis stub for the sub-design. This may lead to errors in top level synthesis of the design. Error reported: $_RESULT"
 }
 
 if { [catch {
-  file rename -force /home/cansu/project_32768/project_32768.runs/Top_xbar_1_synth_1/Top_xbar_1_stub.vhdl /home/cansu/project_32768/project_32768.gen/sources_1/bd/Top/ip/Top_xbar_1/Top_xbar_1_stub.vhdl
+  file rename -force /home/cansu/bf2_hw/bf2_hw.runs/Top_xbar_1_synth_1/Top_xbar_1_stub.vhdl /home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ip/Top_xbar_1/Top_xbar_1_stub.vhdl
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create a VHDL synthesis stub for the sub-design. This may lead to errors in top level synthesis of the design. Error reported: $_RESULT"
 }
 
 if { [catch {
-  file rename -force /home/cansu/project_32768/project_32768.runs/Top_xbar_1_synth_1/Top_xbar_1_sim_netlist.v /home/cansu/project_32768/project_32768.gen/sources_1/bd/Top/ip/Top_xbar_1/Top_xbar_1_sim_netlist.v
+  file rename -force /home/cansu/bf2_hw/bf2_hw.runs/Top_xbar_1_synth_1/Top_xbar_1_sim_netlist.v /home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ip/Top_xbar_1/Top_xbar_1_sim_netlist.v
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create the Verilog functional simulation sub-design file. Post-Synthesis Functional Simulation with this file may not be possible or may give incorrect results. Error reported: $_RESULT"
 }
 
 if { [catch {
-  file rename -force /home/cansu/project_32768/project_32768.runs/Top_xbar_1_synth_1/Top_xbar_1_sim_netlist.vhdl /home/cansu/project_32768/project_32768.gen/sources_1/bd/Top/ip/Top_xbar_1/Top_xbar_1_sim_netlist.vhdl
+  file rename -force /home/cansu/bf2_hw/bf2_hw.runs/Top_xbar_1_synth_1/Top_xbar_1_sim_netlist.vhdl /home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ip/Top_xbar_1/Top_xbar_1_sim_netlist.vhdl
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create the VHDL functional simulation sub-design file. Post-Synthesis Functional Simulation with this file may not be possible or may give incorrect results. Error reported: $_RESULT"
 }
@@ -236,15 +235,15 @@ if { [catch {
 close [open .end.used_ip_cache.rst w]
 }; # end if cacheID 
 
-if {[file isdir /home/cansu/project_32768/project_32768.ip_user_files/ip/Top_xbar_1]} {
+if {[file isdir /home/cansu/bf2_hw/bf2_hw.ip_user_files/ip/Top_xbar_1]} {
   catch { 
-    file copy -force /home/cansu/project_32768/project_32768.gen/sources_1/bd/Top/ip/Top_xbar_1/Top_xbar_1_stub.v /home/cansu/project_32768/project_32768.ip_user_files/ip/Top_xbar_1
+    file copy -force /home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ip/Top_xbar_1/Top_xbar_1_stub.v /home/cansu/bf2_hw/bf2_hw.ip_user_files/ip/Top_xbar_1
   }
 }
 
-if {[file isdir /home/cansu/project_32768/project_32768.ip_user_files/ip/Top_xbar_1]} {
+if {[file isdir /home/cansu/bf2_hw/bf2_hw.ip_user_files/ip/Top_xbar_1]} {
   catch { 
-    file copy -force /home/cansu/project_32768/project_32768.gen/sources_1/bd/Top/ip/Top_xbar_1/Top_xbar_1_stub.vhdl /home/cansu/project_32768/project_32768.ip_user_files/ip/Top_xbar_1
+    file copy -force /home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ip/Top_xbar_1/Top_xbar_1_stub.vhdl /home/cansu/bf2_hw/bf2_hw.ip_user_files/ip/Top_xbar_1
   }
 }
 file delete __synthesis_is_running__

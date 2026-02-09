@@ -1,14 +1,14 @@
 # compile verilog/system verilog design source files
-verilog xil_defaultlib  --include "../../../../project_32768.gen/sources_1/bd/Top/ipshared/ec67/hdl" --include "../../../../project_32768.gen/sources_1/bd/Top/ipshared/03b2/hdl/verilog" --include "../../../../project_32768.gen/sources_1/bd/Top/ipshared/30ef" --include "/tools/Xilinx/Vivado/2023.1/data/xilinx_vip/include" \
-"../../../../project_32768.srcs/sources_1/new/bloom_bram_lookup.v" \
-"../../../../project_32768.srcs/sources_1/imports/sources/multi_pipeline.v" \
+verilog xil_defaultlib  --include "../../../../bf2_hw.gen/sources_1/bd/Top/ipshared/03b2/hdl/verilog" --include "../../../../bf2_hw.gen/sources_1/bd/Top/ipshared/ec67/hdl" --include "../../../../bf2_hw.gen/sources_1/bd/Top/ipshared/30ef" --include "/tools/Xilinx/Vivado/2023.1/data/xilinx_vip/include" \
+"../../../../bf2_hw.srcs/sources_1/new/bloom_bram_lookup.v" \
+"../../../../bf2_hw.srcs/sources_1/new/multi_pipeline.v" \
 
-sv xil_defaultlib  --include "../../../../project_32768.gen/sources_1/bd/Top/ipshared/ec67/hdl" --include "../../../../project_32768.gen/sources_1/bd/Top/ipshared/03b2/hdl/verilog" --include "../../../../project_32768.gen/sources_1/bd/Top/ipshared/30ef" --include "/tools/Xilinx/Vivado/2023.1/data/xilinx_vip/include" \
-"../../../../project_32768.srcs/sources_1/imports/sources/hash_pipeline.sv" \
-"../../../../project_32768.srcs/sources_1/new/md4_PE.sv" \
-"../../../../project_32768.srcs/sources_1/imports/sources/md4_top.sv" \
-"../../../../project_32768.srcs/sources_1/imports/sources/pwd_generator.sv" \
-"../../../../project_32768.srcs/sim_1/new/multi_cores_tb.sv" \
+sv xil_defaultlib  --include "../../../../bf2_hw.gen/sources_1/bd/Top/ipshared/03b2/hdl/verilog" --include "../../../../bf2_hw.gen/sources_1/bd/Top/ipshared/ec67/hdl" --include "../../../../bf2_hw.gen/sources_1/bd/Top/ipshared/30ef" --include "/tools/Xilinx/Vivado/2023.1/data/xilinx_vip/include" \
+"../../../../bf2_hw.srcs/sources_1/new/hash_pipeline.sv" \
+"../../../../bf2_hw.srcs/sources_1/new/md4_PE.sv" \
+"../../../../bf2_hw.srcs/sources_1/new/md4_top.sv" \
+"../../../../bf2_hw.srcs/sources_1/new/pwd_generator.sv" \
+"../../../../bf2_hw.srcs/sim_1/new/multi_cores_tb.sv" \
 
 # compile glbl module
 verilog xil_defaultlib "glbl.v"

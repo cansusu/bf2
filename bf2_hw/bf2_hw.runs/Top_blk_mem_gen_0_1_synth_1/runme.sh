@@ -21,7 +21,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/home/cansu/4096_bf_trytests/4096_bf_trytests.runs/Top_blk_mem_gen_0_1_synth_1'
+HD_PWD='/home/cansu/bf2_hw/bf2_hw.runs/Top_blk_mem_gen_0_1_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

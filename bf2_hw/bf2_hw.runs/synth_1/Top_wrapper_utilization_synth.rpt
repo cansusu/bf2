@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.1 (lin64) Build 3865809 Sun May  7 15:04:56 MDT 2023
-| Date         : Wed Jan 14 22:48:48 2026
+| Date         : Mon Feb  9 18:17:37 2026
 | Host         : cansu-pc running 64-bit Ubuntu 20.04.6 LTS
 | Command      : report_utilization -file Top_wrapper_utilization_synth.rpt -pb Top_wrapper_utilization_synth.pb
 | Design       : Top_wrapper
@@ -166,7 +166,6 @@ Warning! LUT value is adjusted to account for LUT combining.
 | Top_xbar_1                |    1 |
 | Top_util_vector_logic_0_0 |    1 |
 | Top_util_ds_buf_0         |    1 |
-| Top_s00_mmu_0             |    1 |
 | Top_rst_clk_wiz_100M_0    |    1 |
 | Top_multi_cores_top_0_0   |    1 |
 | Top_comparator_0_0        |    1 |

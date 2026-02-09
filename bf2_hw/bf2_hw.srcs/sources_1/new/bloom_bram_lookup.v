@@ -5,7 +5,7 @@ module bloom_bram_lookup #(
     input  wire clk_i,
     input  wire rst_n,
     input  wire en,
-    input  wire [3:0] number_of_hashes, 
+    input  wire [3:0] number_of_hashes,  // 1-15
     input  wire [14:0] idx1,
     input  wire [14:0] idx2,
     input  wire [14:0] idx3,
@@ -24,7 +24,7 @@ module bloom_bram_lookup #(
     input  wire idx_valid,
 
     output reg  bf_bit_and_out_reg,   
-    output reg  bf_valid,             
+    output reg  bf_valid,            
     
 
     input  wire load_i,
@@ -37,28 +37,24 @@ module bloom_bram_lookup #(
 
     (* ram_style = "block" *) reg [BF_WORD_WIDTH-1:0] mem [0:DEPTH-1];
 
-
     reg [ADDR_WIDTH-1:0] addr [0:14];
     reg [5:0] bitpos [0:14];
 
-
     reg [BF_WORD_WIDTH-1:0] word_r1 [0:14];
     reg [5:0] bitpos_r1 [0:14];
-    reg idx_valid_r1;
+    reg idx_valid_reg;
     reg [3:0] num_hashes_r1;
-
 
     reg [BF_WORD_WIDTH-1:0] word_r2 [0:14];
     reg [5:0] bitpos_r2 [0:14];
 
-
     reg [14:0] bit_results;
-
 
     integer i;
 
     always @(posedge clk_i) begin
         if (!rst_n) begin
+            // reset pipeline registers
             for (i = 0; i < 15; i = i + 1) begin
                 addr[i]      <= 0;
                 bitpos[i]    <= 0;
@@ -68,7 +64,7 @@ module bloom_bram_lookup #(
                 bitpos_r2[i] <= 0;
             end
 
-            idx_valid_r1 <= 0;
+            idx_valid_reg <= 0;
             num_hashes_r1 <= 0;
             bit_results <= 0;
 
@@ -77,13 +73,13 @@ module bloom_bram_lookup #(
 
         end else begin
 
+            // BRAM load
             if (load_i) begin
                 mem[load_addr_i] <= load_data_i;
             end
 
             if (en) begin
-
-            
+                
                 addr[0]   <= idx1[14:6];   bitpos[0]  <= idx1[5:0];
                 addr[1]   <= idx2[14:6];   bitpos[1]  <= idx2[5:0];
                 addr[2]   <= idx3[14:6];   bitpos[2]  <= idx3[5:0];
@@ -100,26 +96,23 @@ module bloom_bram_lookup #(
                 addr[13]  <= idx14[14:6];  bitpos[13] <= idx14[5:0];
                 addr[14]  <= idx15[14:6];  bitpos[14] <= idx15[5:0];
 
-
                 for (i = 0; i < 15; i = i + 1) begin
                     word_r1[i] <= mem[addr[i]];
                     
                     bitpos_r1[i] <= bitpos[i];
                 end
 
-                idx_valid_r1 <= idx_valid;
+                idx_valid_reg <= idx_valid;
                 num_hashes_r1 <= number_of_hashes;
-
 
                 for (i = 0; i < 15; i = i + 1) begin
                     word_r2[i] <= word_r1[i];
                     bitpos_r2[i] <= bitpos_r1[i];
                 end
 
-                bf_valid <= idx_valid_r1;
+                bf_valid <= idx_valid_reg;
 
-
-                if (idx_valid_r1) begin
+                if (idx_valid_reg) begin
 
                     for (i = 0; i < 15; i = i + 1) begin
                         bit_results[i] <= (word_r2[i] >> bitpos_r2[i]) & 1'b1;

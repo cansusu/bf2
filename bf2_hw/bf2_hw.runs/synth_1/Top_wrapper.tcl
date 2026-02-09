@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "/home/cansu/project_32768/project_32768.runs/synth_1/Top_wrapper.tcl"
+  variable script "/home/cansu/bf2_hw/bf2_hw.runs/synth_1/Top_wrapper.tcl"
   variable category "vivado_synth"
 }
 
@@ -79,8 +79,8 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir /home/cansu/project_32768/project_32768.cache/wt [current_project]
-set_property parent.project_path /home/cansu/project_32768/project_32768.xpr [current_project]
+set_property webtalk.parent_dir /home/cansu/bf2_hw/bf2_hw.cache/wt [current_project]
+set_property parent.project_path /home/cansu/bf2_hw/bf2_hw.xpr [current_project]
 set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
@@ -90,55 +90,54 @@ set_property ip_repo_paths {
   /home/cansu/bf_different_sizes/Desktop/NiteFury-and-LiteFury/Sample-Projects/Project-0/FPGA/Nitefury-II/ip_repo/myip_datagen_1_0
 } [current_project]
 update_ip_catalog
-set_property ip_output_repo /home/cansu/project_32768/project_32768.cache/ip [current_project]
+set_property ip_output_repo /home/cansu/bf2_hw/bf2_hw.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_verilog -library xil_defaultlib /home/cansu/project_32768/project_32768.gen/sources_1/bd/Top/hdl/Top_wrapper.v
-add_files /home/cansu/project_32768/project_32768.srcs/sources_1/bd/Top/Top.bd
-set_property used_in_implementation false [get_files -all /home/cansu/project_32768/project_32768.gen/sources_1/bd/Top/ip/Top_util_ds_buf_0_1/Top_util_ds_buf_0_board.xdc]
-set_property used_in_implementation false [get_files -all /home/cansu/project_32768/project_32768.gen/sources_1/bd/Top/ip/Top_util_ds_buf_0_1/Top_util_ds_buf_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/cansu/project_32768/project_32768.gen/sources_1/bd/Top/ip/Top_xdma_0_0_1/ip_4/pcie2_fifo_generator_tgt_brdg.xdc]
-set_property used_in_implementation false [get_files -all /home/cansu/project_32768/project_32768.gen/sources_1/bd/Top/ip/Top_xdma_0_0_1/ip_3/pcie2_fifo_generator_dma_cpl.xdc]
-set_property used_in_implementation false [get_files -all /home/cansu/project_32768/project_32768.gen/sources_1/bd/Top/ip/Top_xdma_0_0_1/ip_2/xdma_v4_1_23_blk_mem_64_noreg_be_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/cansu/project_32768/project_32768.gen/sources_1/bd/Top/ip/Top_xdma_0_0_1/ip_1/xdma_v4_1_23_blk_mem_64_reg_be_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/cansu/project_32768/project_32768.gen/sources_1/bd/Top/ip/Top_xdma_0_0_1/ip_0/source/Top_xdma_0_0_pcie2_ip-PCIE_X0Y0.xdc]
-set_property used_in_implementation false [get_files -all /home/cansu/project_32768/project_32768.gen/sources_1/bd/Top/ip/Top_xdma_0_0_1/ip_0/synth/Top_xdma_0_0_pcie2_ip_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/cansu/project_32768/project_32768.gen/sources_1/bd/Top/ip/Top_xdma_0_0_1/Top_xdma_0_0_board.xdc]
-set_property used_in_implementation false [get_files -all /home/cansu/project_32768/project_32768.gen/sources_1/bd/Top/ip/Top_xdma_0_0_1/source/Top_xdma_0_0_pcie3_7vx_ip.xdc]
-set_property used_in_implementation false [get_files -all /home/cansu/project_32768/project_32768.gen/sources_1/bd/Top/ip/Top_xdma_0_0_1/synth/Top_xdma_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/cansu/project_32768/project_32768.gen/sources_1/bd/Top/ip/Top_xbar_1/Top_xbar_1_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/cansu/project_32768/project_32768.gen/sources_1/bd/Top/ip/Top_axi_bram_ctrl_0_0/Top_axi_bram_ctrl_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/cansu/project_32768/project_32768.gen/sources_1/bd/Top/ip/Top_blk_mem_gen_0_1/Top_blk_mem_gen_0_1_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/cansu/project_32768/project_32768.gen/sources_1/bd/Top/ip/Top_axi_gpio_0_0/Top_axi_gpio_0_0_board.xdc]
-set_property used_in_implementation false [get_files -all /home/cansu/project_32768/project_32768.gen/sources_1/bd/Top/ip/Top_axi_gpio_0_0/Top_axi_gpio_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/cansu/project_32768/project_32768.gen/sources_1/bd/Top/ip/Top_axi_gpio_0_0/Top_axi_gpio_0_0.xdc]
-set_property used_in_implementation false [get_files -all /home/cansu/project_32768/project_32768.gen/sources_1/bd/Top/ip/Top_axi_gpio_1_0/Top_axi_gpio_1_0_board.xdc]
-set_property used_in_implementation false [get_files -all /home/cansu/project_32768/project_32768.gen/sources_1/bd/Top/ip/Top_axi_gpio_1_0/Top_axi_gpio_1_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/cansu/project_32768/project_32768.gen/sources_1/bd/Top/ip/Top_axi_gpio_1_0/Top_axi_gpio_1_0.xdc]
-set_property used_in_implementation false [get_files -all /home/cansu/project_32768/project_32768.gen/sources_1/bd/Top/ip/Top_rst_clk_wiz_100M_0/Top_rst_clk_wiz_100M_0_board.xdc]
-set_property used_in_implementation false [get_files -all /home/cansu/project_32768/project_32768.gen/sources_1/bd/Top/ip/Top_rst_clk_wiz_100M_0/Top_rst_clk_wiz_100M_0.xdc]
-set_property used_in_implementation false [get_files -all /home/cansu/project_32768/project_32768.gen/sources_1/bd/Top/ip/Top_rst_clk_wiz_100M_0/Top_rst_clk_wiz_100M_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/cansu/project_32768/project_32768.gen/sources_1/bd/Top/ip/Top_clk_wiz_1/Top_clk_wiz_1_board.xdc]
-set_property used_in_implementation false [get_files -all /home/cansu/project_32768/project_32768.gen/sources_1/bd/Top/ip/Top_clk_wiz_1/Top_clk_wiz_1.xdc]
-set_property used_in_implementation false [get_files -all /home/cansu/project_32768/project_32768.gen/sources_1/bd/Top/ip/Top_clk_wiz_1/Top_clk_wiz_1_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/cansu/project_32768/project_32768.gen/sources_1/bd/Top/ip/Top_axi_gpio_2_0/Top_axi_gpio_2_0_board.xdc]
-set_property used_in_implementation false [get_files -all /home/cansu/project_32768/project_32768.gen/sources_1/bd/Top/ip/Top_axi_gpio_2_0/Top_axi_gpio_2_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/cansu/project_32768/project_32768.gen/sources_1/bd/Top/ip/Top_axi_gpio_2_0/Top_axi_gpio_2_0.xdc]
-set_property used_in_implementation false [get_files -all /home/cansu/project_32768/project_32768.gen/sources_1/bd/Top/ip/Top_axi_gpio_3_0/Top_axi_gpio_3_0_board.xdc]
-set_property used_in_implementation false [get_files -all /home/cansu/project_32768/project_32768.gen/sources_1/bd/Top/ip/Top_axi_gpio_3_0/Top_axi_gpio_3_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/cansu/project_32768/project_32768.gen/sources_1/bd/Top/ip/Top_axi_gpio_3_0/Top_axi_gpio_3_0.xdc]
-set_property used_in_implementation false [get_files -all /home/cansu/project_32768/project_32768.gen/sources_1/bd/Top/ip/Top_axi_gpio_3_1/Top_axi_gpio_3_1_board.xdc]
-set_property used_in_implementation false [get_files -all /home/cansu/project_32768/project_32768.gen/sources_1/bd/Top/ip/Top_axi_gpio_3_1/Top_axi_gpio_3_1_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/cansu/project_32768/project_32768.gen/sources_1/bd/Top/ip/Top_axi_gpio_3_1/Top_axi_gpio_3_1.xdc]
-set_property used_in_synthesis false [get_files -all /home/cansu/project_32768/project_32768.gen/sources_1/bd/Top/ip/Top_auto_cc_0/Top_auto_cc_0_clocks.xdc]
-set_property used_in_implementation false [get_files -all /home/cansu/project_32768/project_32768.gen/sources_1/bd/Top/ip/Top_auto_cc_0/Top_auto_cc_0_clocks.xdc]
-set_property used_in_implementation false [get_files -all /home/cansu/project_32768/project_32768.gen/sources_1/bd/Top/ip/Top_auto_cc_0/Top_auto_cc_0_ooc.xdc]
-set_property used_in_synthesis false [get_files -all /home/cansu/project_32768/project_32768.gen/sources_1/bd/Top/ip/Top_auto_cc_1/Top_auto_cc_1_clocks.xdc]
-set_property used_in_implementation false [get_files -all /home/cansu/project_32768/project_32768.gen/sources_1/bd/Top/ip/Top_auto_cc_1/Top_auto_cc_1_clocks.xdc]
-set_property used_in_implementation false [get_files -all /home/cansu/project_32768/project_32768.gen/sources_1/bd/Top/ip/Top_auto_cc_1/Top_auto_cc_1_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/cansu/project_32768/project_32768.gen/sources_1/bd/Top/ip/Top_s00_mmu_0/Top_s00_mmu_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/cansu/project_32768/project_32768.gen/sources_1/bd/Top/Top_ooc.xdc]
+read_verilog -library xil_defaultlib /home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/hdl/Top_wrapper.v
+add_files /home/cansu/bf2_hw/bf2_hw.srcs/sources_1/bd/Top/Top.bd
+set_property used_in_implementation false [get_files -all /home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ip/Top_util_ds_buf_0_1/Top_util_ds_buf_0_board.xdc]
+set_property used_in_implementation false [get_files -all /home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ip/Top_util_ds_buf_0_1/Top_util_ds_buf_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ip/Top_xdma_0_0_1/ip_4/pcie2_fifo_generator_tgt_brdg.xdc]
+set_property used_in_implementation false [get_files -all /home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ip/Top_xdma_0_0_1/ip_3/pcie2_fifo_generator_dma_cpl.xdc]
+set_property used_in_implementation false [get_files -all /home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ip/Top_xdma_0_0_1/ip_2/xdma_v4_1_23_blk_mem_64_noreg_be_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ip/Top_xdma_0_0_1/ip_1/xdma_v4_1_23_blk_mem_64_reg_be_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ip/Top_xdma_0_0_1/ip_0/source/Top_xdma_0_0_pcie2_ip-PCIE_X0Y0.xdc]
+set_property used_in_implementation false [get_files -all /home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ip/Top_xdma_0_0_1/ip_0/synth/Top_xdma_0_0_pcie2_ip_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ip/Top_xdma_0_0_1/Top_xdma_0_0_board.xdc]
+set_property used_in_implementation false [get_files -all /home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ip/Top_xdma_0_0_1/source/Top_xdma_0_0_pcie3_7vx_ip.xdc]
+set_property used_in_implementation false [get_files -all /home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ip/Top_xdma_0_0_1/synth/Top_xdma_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ip/Top_xbar_1/Top_xbar_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ip/Top_axi_bram_ctrl_0_0/Top_axi_bram_ctrl_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ip/Top_blk_mem_gen_0_1/Top_blk_mem_gen_0_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ip/Top_axi_gpio_0_0/Top_axi_gpio_0_0_board.xdc]
+set_property used_in_implementation false [get_files -all /home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ip/Top_axi_gpio_0_0/Top_axi_gpio_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ip/Top_axi_gpio_0_0/Top_axi_gpio_0_0.xdc]
+set_property used_in_implementation false [get_files -all /home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ip/Top_axi_gpio_1_0/Top_axi_gpio_1_0_board.xdc]
+set_property used_in_implementation false [get_files -all /home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ip/Top_axi_gpio_1_0/Top_axi_gpio_1_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ip/Top_axi_gpio_1_0/Top_axi_gpio_1_0.xdc]
+set_property used_in_implementation false [get_files -all /home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ip/Top_rst_clk_wiz_100M_0/Top_rst_clk_wiz_100M_0_board.xdc]
+set_property used_in_implementation false [get_files -all /home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ip/Top_rst_clk_wiz_100M_0/Top_rst_clk_wiz_100M_0.xdc]
+set_property used_in_implementation false [get_files -all /home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ip/Top_rst_clk_wiz_100M_0/Top_rst_clk_wiz_100M_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ip/Top_clk_wiz_1/Top_clk_wiz_1_board.xdc]
+set_property used_in_implementation false [get_files -all /home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ip/Top_clk_wiz_1/Top_clk_wiz_1.xdc]
+set_property used_in_implementation false [get_files -all /home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ip/Top_clk_wiz_1/Top_clk_wiz_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ip/Top_axi_gpio_2_0/Top_axi_gpio_2_0_board.xdc]
+set_property used_in_implementation false [get_files -all /home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ip/Top_axi_gpio_2_0/Top_axi_gpio_2_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ip/Top_axi_gpio_2_0/Top_axi_gpio_2_0.xdc]
+set_property used_in_implementation false [get_files -all /home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ip/Top_axi_gpio_3_0/Top_axi_gpio_3_0_board.xdc]
+set_property used_in_implementation false [get_files -all /home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ip/Top_axi_gpio_3_0/Top_axi_gpio_3_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ip/Top_axi_gpio_3_0/Top_axi_gpio_3_0.xdc]
+set_property used_in_implementation false [get_files -all /home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ip/Top_axi_gpio_3_1/Top_axi_gpio_3_1_board.xdc]
+set_property used_in_implementation false [get_files -all /home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ip/Top_axi_gpio_3_1/Top_axi_gpio_3_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ip/Top_axi_gpio_3_1/Top_axi_gpio_3_1.xdc]
+set_property used_in_synthesis false [get_files -all /home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ip/Top_auto_cc_0/Top_auto_cc_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all /home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ip/Top_auto_cc_0/Top_auto_cc_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all /home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ip/Top_auto_cc_0/Top_auto_cc_0_ooc.xdc]
+set_property used_in_synthesis false [get_files -all /home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ip/Top_auto_cc_1/Top_auto_cc_1_clocks.xdc]
+set_property used_in_implementation false [get_files -all /home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ip/Top_auto_cc_1/Top_auto_cc_1_clocks.xdc]
+set_property used_in_implementation false [get_files -all /home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ip/Top_auto_cc_1/Top_auto_cc_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/Top_ooc.xdc]
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -149,12 +148,12 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc /home/cansu/project_32768/project_32768.srcs/constrs_1/imports/constraints/early.xdc
-set_property used_in_implementation false [get_files /home/cansu/project_32768/project_32768.srcs/constrs_1/imports/constraints/early.xdc]
-set_property processing_order EARLY [get_files /home/cansu/project_32768/project_32768.srcs/constrs_1/imports/constraints/early.xdc]
+read_xdc /home/cansu/bf2_hw/bf2_hw.srcs/constrs_1/imports/constraints/early.xdc
+set_property used_in_implementation false [get_files /home/cansu/bf2_hw/bf2_hw.srcs/constrs_1/imports/constraints/early.xdc]
+set_property processing_order EARLY [get_files /home/cansu/bf2_hw/bf2_hw.srcs/constrs_1/imports/constraints/early.xdc]
 
-read_xdc /home/cansu/project_32768/project_32768.srcs/constrs_1/imports/constraints/normal.xdc
-set_property used_in_implementation false [get_files /home/cansu/project_32768/project_32768.srcs/constrs_1/imports/constraints/normal.xdc]
+read_xdc /home/cansu/bf2_hw/bf2_hw.srcs/constrs_1/imports/constraints/normal.xdc
+set_property used_in_implementation false [get_files /home/cansu/bf2_hw/bf2_hw.srcs/constrs_1/imports/constraints/normal.xdc]
 
 read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]

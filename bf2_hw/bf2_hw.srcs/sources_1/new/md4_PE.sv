@@ -1,40 +1,38 @@
 module md4_PE #(
     parameter PWD_SIZE = 3
 )(
-    input  wire                  clk_i,
-    input  wire                  rst_n_i,
-    input  wire                  en,
+    input  wire                 clk_i,
+    input  wire                 rst_n_i,
+    input  wire                 en,
 
     input  wire [7*PWD_SIZE-1:0] data_i,
-    input  wire                  valid_i,
-    input  wire                  gen_pipeline_i,
-    output reg                   gen_pipeline_o,
+    input  wire                 valid_i,
+    input  wire                 gen_pipeline_i,
+    output reg                  gen_pipeline_o,
 
-    input  wire [5:0]            round_i,
+    input  wire [5:0]           round_i,
 
-    input  wire [31:0]           state_A_i,
-    input  wire [31:0]           state_B_i,
-    input  wire [31:0]           state_C_i,
-    input  wire [31:0]           state_D_i,
+    input  wire [31:0]          state_A_i,
+    input  wire [31:0]          state_B_i,
+    input  wire [31:0]          state_C_i,
+    input  wire [31:0]          state_D_i,
 
     output reg  [7*PWD_SIZE-1:0] data_o,
-    output reg                   valid_o,
+    output reg                  valid_o,
 
-    output reg  [31:0]           state_A_o,
-    output reg  [31:0]           state_B_o,
-    output reg  [31:0]           state_C_o,
-    output reg  [31:0]           state_D_o
+    output reg  [31:0]          state_A_o,
+    output reg  [31:0]          state_B_o,
+    output reg  [31:0]          state_C_o,
+    output reg  [31:0]          state_D_o
 );
-
 
     localparam integer DW = 7*PWD_SIZE;
     localparam integer EXPW = 16*PWD_SIZE;
     localparam integer PAD_ZEROS = 448 - EXPW - 1;
 
-
     localparam [7:0] MSG_LEN = PWD_SIZE * 16;
 
-
+    // Expand password into 16-bit chunks: {0, 7-bit char, 8'b0}
     wire [EXPW-1:0] expanded_password;
 
     genvar k;
@@ -44,7 +42,7 @@ module md4_PE #(
         end
     endgenerate
 
-
+    // padded_message[447:0] = {expanded_password at top, 1'b1, zeros}
     wire [447:0] padded_message;
     generate
         if (PAD_ZEROS > 0) begin : PADN
@@ -54,12 +52,11 @@ module md4_PE #(
         end
     endgenerate
 
+    // message = {padded_message, msg_length, 56'd0}
     wire [511:0] message;
     assign message = {padded_message, MSG_LEN, 56'd0};
 
-
     wire [16*32-1:0] X_bus;
-
     genvar i;
     generate
         for (i = 0; i < 16; i = i + 1) begin : XWORDS
@@ -132,15 +129,16 @@ module md4_PE #(
         endcase
     end
 
-
     wire [31:0] X_sel = X_bus[data_block*32 +: 32];
-
+    
     wire [31:0] sum1 = state_A_i + function_result;
     wire [31:0] sum2 = X_sel + K;
     wire [31:0] temp = sum1 + sum2;
 
-    wire [31:0] rotl = (shift_amount == 5'd0) ? temp :
-                       ((temp << shift_amount) | (temp >> (32 - shift_amount)));
+    wire [31:0] rotl =
+        (shift_amount == 5'd0) ? temp :
+        ((temp << shift_amount) | (temp >> (32 - shift_amount)));
+
 
     always @(posedge clk_i or negedge rst_n_i) begin
         if (!rst_n_i) begin

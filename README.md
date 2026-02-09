@@ -17,6 +17,7 @@ source ./Scripts/build.tcl
 # Host-side
 
 The program currently reads `hashes.txt` for the matching logic.
+We include an example hashes.txt file containing randomly generated hashes of 5-character strings.
 Other configuration options like the PCIe device and the number
 of threads + sizes are configured in `src/main.rs`.
 

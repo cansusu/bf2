@@ -2,10 +2,10 @@
 // Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2023.1 (lin64) Build 3865809 Sun May  7 15:04:56 MDT 2023
-// Date        : Wed Jan 14 22:45:58 2026
+// Date        : Mon Feb  9 18:08:40 2026
 // Host        : cansu-pc running 64-bit Ubuntu 20.04.6 LTS
 // Command     : write_verilog -force -mode synth_stub
-//               /home/cansu/project_32768/project_32768.gen/sources_1/bd/Top/ip/Top_comparator_0_0/Top_comparator_0_0_stub.v
+//               /home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ip/Top_comparator_0_0/Top_comparator_0_0_stub.v
 // Design      : Top_comparator_0_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7a200tfbg484-2

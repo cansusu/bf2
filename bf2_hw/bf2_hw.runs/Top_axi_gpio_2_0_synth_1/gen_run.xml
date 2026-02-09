@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="Top_axi_gpio_2_0_synth_1" LaunchPart="xc7a200tfbg484-2" LaunchTime="1762437014">
+<GenRun Id="Top_axi_gpio_2_0_synth_1" LaunchPart="xc7a200tfbg484-2" LaunchTime="1770656760">
+  <File Type="VDS-TIMING-PB" Name="Top_axi_gpio_2_0_timing_summary_synth.pb"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="Top_axi_gpio_2_0_timing_summary_synth.rpt"/>
+  <File Type="RDS-DCP" Name="Top_axi_gpio_2_0.dcp"/>
+  <File Type="RDS-UTIL-PB" Name="Top_axi_gpio_2_0_utilization_synth.pb"/>
+  <File Type="RDS-UTIL" Name="Top_axi_gpio_2_0_utilization_synth.rpt"/>
+  <File Type="RDS-PROPCONSTRS" Name="Top_axi_gpio_2_0_drc_synth.rpt"/>
   <File Type="RDS-RDS" Name="Top_axi_gpio_2_0.vds"/>
   <File Type="REPORTS-TCL" Name="Top_axi_gpio_2_0_reports.tcl"/>
   <File Type="PA-TCL" Name="Top_axi_gpio_2_0.tcl"/>
-  <File Type="RDS-DCP" Name="Top_axi_gpio_2_0.dcp"/>
-  <File Type="RDS-UTIL" Name="Top_axi_gpio_2_0_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="Top_axi_gpio_2_0_utilization_synth.pb"/>
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/Top_axi_gpio_2_0" RelGenDir="$PGENDIR/Top_axi_gpio_2_0">
     <File Path="$PSRCDIR/sources_1/bd/Top/ip/Top_axi_gpio_2_0/Top_axi_gpio_2_0.xci">
       <FileInfo>

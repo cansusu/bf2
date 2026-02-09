@@ -1,4 +1,5 @@
 create_hw_cfgmem -hw_device [lindex [get_hw_devices xc7a*] 0] [lindex [get_cfgmem_parts {s25fl256sxxxxxx0-spi-x1_x2_x4}] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a*] 0]
 
 set_property PROGRAM.ADDRESS_RANGE  {use_file} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a*] 0]]
 set_property PROGRAM.FILES [list "./out.mcs" ] [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a*] 0]]

@@ -11,7 +11,7 @@
     ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 
 source Top_xbar_1.tcl -notrace
-create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 1286.629 ; gain = 62.047 ; free physical = 47908 ; free virtual = 55588
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1280.398 ; gain = 2.023 ; free physical = 50687 ; free virtual = 57298
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/cansu/ip_repo/axi_reg_1_0'.
 WARNING: [IP_Flow 19-2207] Repository '/home/cansu/ip_repo/axi_reg_1_0' already exists; ignoring attempt to add it again.
@@ -27,50 +27,52 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200
 INFO: [Device 21-403] Loading part xc7a200tfbg484-2
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 21100
+INFO: [Synth 8-7075] Helper process launched with PID 11064
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2069.711 ; gain = 377.770 ; free physical = 43790 ; free virtual = 51456
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2069.543 ; gain = 376.801 ; free physical = 46407 ; free virtual = 53004
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'Top_xbar_1' [/home/cansu/project_32768/project_32768.gen/sources_1/bd/Top/ip/Top_xbar_1/synth/Top_xbar_1.v:53]
-INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_29_axi_crossbar' [/home/cansu/project_32768/project_32768.gen/sources_1/bd/Top/ipshared/f8f3/hdl/axi_crossbar_v2_1_vl_rfs.v:4883]
-INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_29_crossbar_sasd' [/home/cansu/project_32768/project_32768.gen/sources_1/bd/Top/ipshared/f8f3/hdl/axi_crossbar_v2_1_vl_rfs.v:1239]
-INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_29_addr_decoder' [/home/cansu/project_32768/project_32768.gen/sources_1/bd/Top/ipshared/f8f3/hdl/axi_crossbar_v2_1_vl_rfs.v:793]
-INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static' [/home/cansu/project_32768/project_32768.gen/sources_1/bd/Top/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2132]
-INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_carry_and' [/home/cansu/project_32768/project_32768.gen/sources_1/bd/Top/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:61]
-INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_carry_and' (0#1) [/home/cansu/project_32768/project_32768.gen/sources_1/bd/Top/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:61]
-INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static' (0#1) [/home/cansu/project_32768/project_32768.gen/sources_1/bd/Top/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2132]
-INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized0' [/home/cansu/project_32768/project_32768.gen/sources_1/bd/Top/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2132]
-INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized0' (0#1) [/home/cansu/project_32768/project_32768.gen/sources_1/bd/Top/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2132]
-INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized1' [/home/cansu/project_32768/project_32768.gen/sources_1/bd/Top/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2132]
-INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized1' (0#1) [/home/cansu/project_32768/project_32768.gen/sources_1/bd/Top/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2132]
-INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized2' [/home/cansu/project_32768/project_32768.gen/sources_1/bd/Top/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2132]
-INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized2' (0#1) [/home/cansu/project_32768/project_32768.gen/sources_1/bd/Top/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2132]
-INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_29_addr_decoder' (0#1) [/home/cansu/project_32768/project_32768.gen/sources_1/bd/Top/ipshared/f8f3/hdl/axi_crossbar_v2_1_vl_rfs.v:793]
-INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_29_decerr_slave' [/home/cansu/project_32768/project_32768.gen/sources_1/bd/Top/ipshared/f8f3/hdl/axi_crossbar_v2_1_vl_rfs.v:3500]
-INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_29_decerr_slave' (0#1) [/home/cansu/project_32768/project_32768.gen/sources_1/bd/Top/ipshared/f8f3/hdl/axi_crossbar_v2_1_vl_rfs.v:3500]
-INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_29_addr_arbiter_sasd' [/home/cansu/project_32768/project_32768.gen/sources_1/bd/Top/ipshared/f8f3/hdl/axi_crossbar_v2_1_vl_rfs.v:64]
-INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_29_addr_arbiter_sasd' (0#1) [/home/cansu/project_32768/project_32768.gen/sources_1/bd/Top/ipshared/f8f3/hdl/axi_crossbar_v2_1_vl_rfs.v:64]
-INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_29_splitter' [/home/cansu/project_32768/project_32768.gen/sources_1/bd/Top/ipshared/f8f3/hdl/axi_crossbar_v2_1_vl_rfs.v:4460]
-INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_29_splitter' (0#1) [/home/cansu/project_32768/project_32768.gen/sources_1/bd/Top/ipshared/f8f3/hdl/axi_crossbar_v2_1_vl_rfs.v:4460]
-INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_29_splitter__parameterized0' [/home/cansu/project_32768/project_32768.gen/sources_1/bd/Top/ipshared/f8f3/hdl/axi_crossbar_v2_1_vl_rfs.v:4460]
-INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_29_splitter__parameterized0' (0#1) [/home/cansu/project_32768/project_32768.gen/sources_1/bd/Top/ipshared/f8f3/hdl/axi_crossbar_v2_1_vl_rfs.v:4460]
-INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc' [/home/cansu/project_32768/project_32768.gen/sources_1/bd/Top/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2451]
-INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc' (0#1) [/home/cansu/project_32768/project_32768.gen/sources_1/bd/Top/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2451]
-INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized0' [/home/cansu/project_32768/project_32768.gen/sources_1/bd/Top/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2451]
-INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized0' (0#1) [/home/cansu/project_32768/project_32768.gen/sources_1/bd/Top/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2451]
-INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized1' [/home/cansu/project_32768/project_32768.gen/sources_1/bd/Top/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2451]
-INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized1' (0#1) [/home/cansu/project_32768/project_32768.gen/sources_1/bd/Top/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2451]
-INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_28_axic_register_slice' [/home/cansu/project_32768/project_32768.gen/sources_1/bd/Top/ipshared/87d1/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
-INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_28_axic_register_slice' (0#1) [/home/cansu/project_32768/project_32768.gen/sources_1/bd/Top/ipshared/87d1/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
-INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized2' [/home/cansu/project_32768/project_32768.gen/sources_1/bd/Top/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2451]
-INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized2' (0#1) [/home/cansu/project_32768/project_32768.gen/sources_1/bd/Top/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2451]
-INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_29_crossbar_sasd' (0#1) [/home/cansu/project_32768/project_32768.gen/sources_1/bd/Top/ipshared/f8f3/hdl/axi_crossbar_v2_1_vl_rfs.v:1239]
-INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_29_axi_crossbar' (0#1) [/home/cansu/project_32768/project_32768.gen/sources_1/bd/Top/ipshared/f8f3/hdl/axi_crossbar_v2_1_vl_rfs.v:4883]
-INFO: [Synth 8-6155] done synthesizing module 'Top_xbar_1' (0#1) [/home/cansu/project_32768/project_32768.gen/sources_1/bd/Top/ip/Top_xbar_1/synth/Top_xbar_1.v:53]
-WARNING: [Synth 8-6014] Unused sequential element gen_debug_trans_seq.debug_aw_trans_seq_i_reg was removed.  [/home/cansu/project_32768/project_32768.gen/sources_1/bd/Top/ipshared/f8f3/hdl/axi_crossbar_v2_1_vl_rfs.v:2056]
-WARNING: [Synth 8-6014] Unused sequential element gen_debug_trans_seq.debug_ar_trans_seq_i_reg was removed.  [/home/cansu/project_32768/project_32768.gen/sources_1/bd/Top/ipshared/f8f3/hdl/axi_crossbar_v2_1_vl_rfs.v:2067]
-WARNING: [Synth 8-6014] Unused sequential element gen_debug_trans_seq.debug_w_beat_cnt_i_reg was removed.  [/home/cansu/project_32768/project_32768.gen/sources_1/bd/Top/ipshared/f8f3/hdl/axi_crossbar_v2_1_vl_rfs.v:2078]
-WARNING: [Synth 8-6014] Unused sequential element gen_debug_trans_seq.debug_r_beat_cnt_i_reg was removed.  [/home/cansu/project_32768/project_32768.gen/sources_1/bd/Top/ipshared/f8f3/hdl/axi_crossbar_v2_1_vl_rfs.v:2091]
+INFO: [Synth 8-6157] synthesizing module 'Top_xbar_1' [/home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ip/Top_xbar_1/synth/Top_xbar_1.v:53]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_29_axi_crossbar' [/home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ipshared/f8f3/hdl/axi_crossbar_v2_1_vl_rfs.v:4883]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_29_crossbar_sasd' [/home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ipshared/f8f3/hdl/axi_crossbar_v2_1_vl_rfs.v:1239]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_29_addr_decoder' [/home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ipshared/f8f3/hdl/axi_crossbar_v2_1_vl_rfs.v:793]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static' [/home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2132]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_carry_and' [/home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:61]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_carry_and' (0#1) [/home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:61]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static' (0#1) [/home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2132]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized0' [/home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2132]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized0' (0#1) [/home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2132]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized1' [/home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2132]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized1' (0#1) [/home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2132]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized2' [/home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2132]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized2' (0#1) [/home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2132]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized3' [/home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2132]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized3' (0#1) [/home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2132]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_29_addr_decoder' (0#1) [/home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ipshared/f8f3/hdl/axi_crossbar_v2_1_vl_rfs.v:793]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_29_decerr_slave' [/home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ipshared/f8f3/hdl/axi_crossbar_v2_1_vl_rfs.v:3500]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_29_decerr_slave' (0#1) [/home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ipshared/f8f3/hdl/axi_crossbar_v2_1_vl_rfs.v:3500]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_29_addr_arbiter_sasd' [/home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ipshared/f8f3/hdl/axi_crossbar_v2_1_vl_rfs.v:64]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_29_addr_arbiter_sasd' (0#1) [/home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ipshared/f8f3/hdl/axi_crossbar_v2_1_vl_rfs.v:64]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_29_splitter' [/home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ipshared/f8f3/hdl/axi_crossbar_v2_1_vl_rfs.v:4460]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_29_splitter' (0#1) [/home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ipshared/f8f3/hdl/axi_crossbar_v2_1_vl_rfs.v:4460]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_29_splitter__parameterized0' [/home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ipshared/f8f3/hdl/axi_crossbar_v2_1_vl_rfs.v:4460]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_29_splitter__parameterized0' (0#1) [/home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ipshared/f8f3/hdl/axi_crossbar_v2_1_vl_rfs.v:4460]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc' [/home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2451]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc' (0#1) [/home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2451]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized0' [/home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2451]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized0' (0#1) [/home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2451]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized1' [/home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2451]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized1' (0#1) [/home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2451]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_28_axic_register_slice' [/home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ipshared/87d1/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_28_axic_register_slice' (0#1) [/home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ipshared/87d1/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized2' [/home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2451]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized2' (0#1) [/home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2451]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_29_crossbar_sasd' (0#1) [/home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ipshared/f8f3/hdl/axi_crossbar_v2_1_vl_rfs.v:1239]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_29_axi_crossbar' (0#1) [/home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ipshared/f8f3/hdl/axi_crossbar_v2_1_vl_rfs.v:4883]
+INFO: [Synth 8-6155] done synthesizing module 'Top_xbar_1' (0#1) [/home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ip/Top_xbar_1/synth/Top_xbar_1.v:53]
+WARNING: [Synth 8-6014] Unused sequential element gen_debug_trans_seq.debug_aw_trans_seq_i_reg was removed.  [/home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ipshared/f8f3/hdl/axi_crossbar_v2_1_vl_rfs.v:2056]
+WARNING: [Synth 8-6014] Unused sequential element gen_debug_trans_seq.debug_ar_trans_seq_i_reg was removed.  [/home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ipshared/f8f3/hdl/axi_crossbar_v2_1_vl_rfs.v:2067]
+WARNING: [Synth 8-6014] Unused sequential element gen_debug_trans_seq.debug_w_beat_cnt_i_reg was removed.  [/home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ipshared/f8f3/hdl/axi_crossbar_v2_1_vl_rfs.v:2078]
+WARNING: [Synth 8-6014] Unused sequential element gen_debug_trans_seq.debug_r_beat_cnt_i_reg was removed.  [/home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ipshared/f8f3/hdl/axi_crossbar_v2_1_vl_rfs.v:2091]
 WARNING: [Synth 8-7129] Port S[0] in module generic_baseblocks_v2_1_0_mux_enc__parameterized0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port S_AXI_AWID[0] in module axi_crossbar_v2_1_29_decerr_slave is either unconnected or has no load
 WARNING: [Synth 8-7129] Port S_AXI_WLAST in module axi_crossbar_v2_1_29_decerr_slave is either unconnected or has no load
@@ -173,53 +175,53 @@ WARNING: [Synth 8-7129] Port m_axi_rid[3] in module axi_crossbar_v2_1_29_axi_cro
 WARNING: [Synth 8-7129] Port m_axi_rid[2] in module axi_crossbar_v2_1_29_axi_crossbar is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2257.586 ; gain = 565.645 ; free physical = 43277 ; free virtual = 51079
+Finished RTL Elaboration : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2257.418 ; gain = 564.676 ; free physical = 45036 ; free virtual = 51636
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2257.586 ; gain = 565.645 ; free physical = 43277 ; free virtual = 51079
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2257.418 ; gain = 564.676 ; free physical = 45036 ; free virtual = 51636
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2257.586 ; gain = 565.645 ; free physical = 43277 ; free virtual = 51079
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2257.418 ; gain = 564.676 ; free physical = 45036 ; free virtual = 51636
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2257.586 ; gain = 0.000 ; free physical = 43277 ; free virtual = 51072
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2257.418 ; gain = 0.000 ; free physical = 45032 ; free virtual = 51632
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [/home/cansu/project_32768/project_32768.gen/sources_1/bd/Top/ip/Top_xbar_1/Top_xbar_1_ooc.xdc] for cell 'inst'
-Finished Parsing XDC File [/home/cansu/project_32768/project_32768.gen/sources_1/bd/Top/ip/Top_xbar_1/Top_xbar_1_ooc.xdc] for cell 'inst'
-Parsing XDC File [/home/cansu/project_32768/project_32768.runs/Top_xbar_1_synth_1/dont_touch.xdc]
-Finished Parsing XDC File [/home/cansu/project_32768/project_32768.runs/Top_xbar_1_synth_1/dont_touch.xdc]
+Parsing XDC File [/home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ip/Top_xbar_1/Top_xbar_1_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ip/Top_xbar_1/Top_xbar_1_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/cansu/bf2_hw/bf2_hw.runs/Top_xbar_1_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/cansu/bf2_hw/bf2_hw.runs/Top_xbar_1_synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2350.430 ; gain = 0.000 ; free physical = 43247 ; free virtual = 51020
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2349.262 ; gain = 0.000 ; free physical = 44993 ; free virtual = 51594
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.07 . Memory (MB): peak = 2350.430 ; gain = 0.000 ; free physical = 43245 ; free virtual = 51017
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.08 . Memory (MB): peak = 2349.262 ; gain = 0.000 ; free physical = 44993 ; free virtual = 51594
 INFO: [Designutils 20-5008] Incremental synthesis strategy off
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2350.430 ; gain = 658.488 ; free physical = 43037 ; free virtual = 50812
+Finished Constraint Validation : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 2349.262 ; gain = 656.520 ; free physical = 45243 ; free virtual = 51846
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a200tfbg484-2
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2350.430 ; gain = 658.488 ; free physical = 43037 ; free virtual = 50812
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 2349.262 ; gain = 656.520 ; free physical = 45243 ; free virtual = 51846
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  /home/cansu/project_32768/project_32768.runs/Top_xbar_1_synth_1/dont_touch.xdc, line 9).
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  /home/cansu/bf2_hw/bf2_hw.runs/Top_xbar_1_synth_1/dont_touch.xdc, line 9).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2350.430 ; gain = 658.488 ; free physical = 43037 ; free virtual = 50812
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 2349.262 ; gain = 656.520 ; free physical = 45241 ; free virtual = 51843
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2350.430 ; gain = 658.488 ; free physical = 43043 ; free virtual = 50805
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 2349.262 ; gain = 656.520 ; free physical = 45234 ; free virtual = 51837
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -254,27 +256,27 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
-INFO: [Synth 8-3936] Found unconnected internal register 'gen_sasd.crossbar_sasd_0/reg_slice_r/m_payload_i_reg' and it is trimmed from '36' to '35' bits. [/home/cansu/project_32768/project_32768.gen/sources_1/bd/Top/ipshared/87d1/hdl/axi_register_slice_v2_1_vl_rfs.v:1731]
+INFO: [Synth 8-3936] Found unconnected internal register 'gen_sasd.crossbar_sasd_0/reg_slice_r/m_payload_i_reg' and it is trimmed from '36' to '35' bits. [/home/cansu/bf2_hw/bf2_hw.gen/sources_1/bd/Top/ipshared/87d1/hdl/axi_register_slice_v2_1_vl_rfs.v:1731]
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 2350.430 ; gain = 658.488 ; free physical = 43009 ; free virtual = 50791
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 2349.262 ; gain = 656.520 ; free physical = 45225 ; free virtual = 51828
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 2350.430 ; gain = 658.488 ; free physical = 43109 ; free virtual = 50869
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 2349.262 ; gain = 656.520 ; free physical = 46586 ; free virtual = 53261
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 2350.430 ; gain = 658.488 ; free physical = 43073 ; free virtual = 50833
+Finished Timing Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 2349.262 ; gain = 656.520 ; free physical = 46510 ; free virtual = 53122
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 2350.430 ; gain = 658.488 ; free physical = 43059 ; free virtual = 50819
+Finished Technology Mapping : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 2349.262 ; gain = 656.520 ; free physical = 46499 ; free virtual = 53111
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -292,37 +294,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 2350.430 ; gain = 658.488 ; free physical = 44008 ; free virtual = 51777
+Finished IO Insertion : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 2349.262 ; gain = 656.520 ; free physical = 46421 ; free virtual = 53033
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 2350.430 ; gain = 658.488 ; free physical = 44008 ; free virtual = 51777
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 2349.262 ; gain = 656.520 ; free physical = 46416 ; free virtual = 53028
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 2350.430 ; gain = 658.488 ; free physical = 44006 ; free virtual = 51776
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 2349.262 ; gain = 656.520 ; free physical = 46413 ; free virtual = 53025
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 2350.430 ; gain = 658.488 ; free physical = 44006 ; free virtual = 51775
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 2349.262 ; gain = 656.520 ; free physical = 46413 ; free virtual = 53025
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 2350.430 ; gain = 658.488 ; free physical = 44005 ; free virtual = 51775
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 2349.262 ; gain = 656.520 ; free physical = 46410 ; free virtual = 53022
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 2350.430 ; gain = 658.488 ; free physical = 44005 ; free virtual = 51774
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 2349.262 ; gain = 656.520 ; free physical = 46401 ; free virtual = 53013
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -341,35 +343,35 @@ Report Cell Usage:
 |1     |LUT1 |     1|
 |2     |LUT2 |    13|
 |3     |LUT3 |    48|
-|4     |LUT4 |    50|
-|5     |LUT5 |    75|
-|6     |LUT6 |    89|
-|7     |FDRE |   133|
+|4     |LUT4 |    51|
+|5     |LUT5 |    76|
+|6     |LUT6 |    92|
+|7     |FDRE |   134|
 +------+-----+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 2350.430 ; gain = 658.488 ; free physical = 44005 ; free virtual = 51774
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 2349.262 ; gain = 656.520 ; free physical = 46395 ; free virtual = 53007
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 87 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 2350.430 ; gain = 565.645 ; free physical = 43999 ; free virtual = 51768
-Synthesis Optimization Complete : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 2350.430 ; gain = 658.488 ; free physical = 43999 ; free virtual = 51768
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 2349.262 ; gain = 564.676 ; free physical = 46308 ; free virtual = 52920
+Synthesis Optimization Complete : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 2349.262 ; gain = 656.520 ; free physical = 46307 ; free virtual = 52919
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2350.430 ; gain = 0.000 ; free physical = 44269 ; free virtual = 52039
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2349.262 ; gain = 0.000 ; free physical = 46484 ; free virtual = 53096
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2350.430 ; gain = 0.000 ; free physical = 44268 ; free virtual = 52038
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2349.262 ; gain = 0.000 ; free physical = 45969 ; free virtual = 52581
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Synth Design complete | Checksum: fff16e61
+Synth Design complete | Checksum: 6422521d
 INFO: [Common 17-83] Releasing license: Synthesis
-56 Infos, 107 Warnings, 0 Critical Warnings and 0 Errors encountered.
+58 Infos, 107 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:34 ; elapsed = 00:00:33 . Memory (MB): peak = 2350.430 ; gain = 1028.145 ; free physical = 44268 ; free virtual = 52038
-INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1731.816; main = 1448.791; forked = 313.782
-INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3298.242; main = 2350.434; forked = 979.824
-INFO: [Common 17-1381] The checkpoint '/home/cansu/project_32768/project_32768.runs/Top_xbar_1_synth_1/Top_xbar_1.dcp' has been generated.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP Top_xbar_1, cache-ID = 264d01dda3bf179d
+synth_design: Time (s): cpu = 00:00:48 ; elapsed = 00:00:46 . Memory (MB): peak = 2349.262 ; gain = 1027.207 ; free physical = 45938 ; free virtual = 52551
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1736.855; main = 1428.062; forked = 308.794
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3293.074; main = 2349.266; forked = 975.824
+INFO: [Common 17-1381] The checkpoint '/home/cansu/bf2_hw/bf2_hw.runs/Top_xbar_1_synth_1/Top_xbar_1.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP Top_xbar_1, cache-ID = 3759e1b968835166
 INFO: [Coretcl 2-1174] Renamed 7 cell refs.
-INFO: [Common 17-1381] The checkpoint '/home/cansu/project_32768/project_32768.runs/Top_xbar_1_synth_1/Top_xbar_1.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint '/home/cansu/bf2_hw/bf2_hw.runs/Top_xbar_1_synth_1/Top_xbar_1.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file Top_xbar_1_utilization_synth.rpt -pb Top_xbar_1_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed Jan 14 22:45:57 2026...
+INFO: [Common 17-206] Exiting Vivado at Mon Feb  9 18:07:51 2026...

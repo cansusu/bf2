@@ -21,7 +21,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/home/cansu/project_32768/project_32768.runs/synth_1'
+HD_PWD='/home/cansu/bf2_hw/bf2_hw.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

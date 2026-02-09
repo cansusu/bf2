@@ -30,8 +30,7 @@
         "m03_couplers": {},
         "m04_couplers": {},
         "m05_couplers": {},
-        "m06_couplers": {},
-        "s00_mmu": ""
+        "m06_couplers": {}
       },
       "axi_bram_ctrl_0": "",
       "blk_mem_gen_0": "",
@@ -1261,30 +1260,9 @@
                 ]
               }
             }
-          },
-          "s00_mmu": {
-            "vlnv": "xilinx.com:ip:axi_mmu:2.1",
-            "xci_name": "Top_s00_mmu_0",
-            "xci_path": "ip/Top_s00_mmu_0/Top_s00_mmu_0.xci",
-            "inst_hier_path": "xdma_0_axi_periph/s00_mmu",
-            "interface_ports": {
-              "S_AXI": {
-                "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
-                "mode": "Slave",
-                "bridges": [
-                  "M_AXI"
-                ]
-              }
-            }
           }
         },
         "interface_nets": {
-          "S00_AXI_1": {
-            "interface_ports": [
-              "s00_mmu/S_AXI",
-              "S00_AXI"
-            ]
-          },
           "m00_couplers_to_xdma_0_axi_periph": {
             "interface_ports": [
               "m00_couplers/M_AXI",
@@ -1333,12 +1311,6 @@
               "xbar/S00_AXI"
             ]
           },
-          "s00_mmu_M_AXI": {
-            "interface_ports": [
-              "s00_mmu/M_AXI",
-              "s00_couplers/S_AXI"
-            ]
-          },
           "xbar_to_m00_couplers": {
             "interface_ports": [
               "xbar/M00_AXI",
@@ -1379,6 +1351,12 @@
             "interface_ports": [
               "xbar/M06_AXI",
               "m06_couplers/S_AXI"
+            ]
+          },
+          "xdma_0_axi_periph_to_s00_couplers": {
+            "interface_ports": [
+              "S00_AXI",
+              "s00_couplers/S_AXI"
             ]
           }
         },
@@ -1470,15 +1448,13 @@
           "S00_ACLK_1": {
             "ports": [
               "S00_ACLK",
-              "s00_couplers/S_ACLK",
-              "s00_mmu/aclk"
+              "s00_couplers/S_ACLK"
             ]
           },
           "S00_ARESETN_1": {
             "ports": [
               "S00_ARESETN",
-              "s00_couplers/S_ARESETN",
-              "s00_mmu/aresetn"
+              "s00_couplers/S_ARESETN"
             ]
           },
           "xdma_0_axi_periph_ACLK_net": {
@@ -1878,8 +1854,8 @@
       },
       "xdma_0_axi_periph_M06_AXI": {
         "interface_ports": [
-          "axi_gpio_number_of_hashes/S_AXI",
-          "xdma_0_axi_periph/M06_AXI"
+          "xdma_0_axi_periph/M06_AXI",
+          "axi_gpio_number_of_hashes/S_AXI"
         ]
       },
       "xdma_0_pcie_mgt": {
@@ -1915,12 +1891,12 @@
           "axi_gpio_prog_Data/s_axi_aclk",
           "xdma_0_axi_periph/M03_ACLK",
           "xdma_0_axi_periph/M04_ACLK",
+          "xdma_0_axi_periph/M05_ACLK",
           "blk_mem_gen_0/clkb",
           "axi_gpio_number_of_hashes/s_axi_aclk",
+          "xdma_0_axi_periph/M06_ACLK",
           "comparator_0/clk",
-          "multi_cores_top_0/clk_i",
-          "xdma_0_axi_periph/M05_ACLK",
-          "xdma_0_axi_periph/M06_ACLK"
+          "multi_cores_top_0/clk_i"
         ]
       },
       "M02_ARESETN_1": {
@@ -1935,13 +1911,13 @@
           "axi_gpio_prog_Data/s_axi_aresetn",
           "xdma_0_axi_periph/M03_ARESETN",
           "xdma_0_axi_periph/M04_ARESETN",
+          "xdma_0_axi_periph/M05_ARESETN",
           "blk_mem_gen_0/rstb",
           "axi_gpio_write_count/s_axi_aresetn",
           "axi_gpio_number_of_hashes/s_axi_aresetn",
+          "xdma_0_axi_periph/M06_ARESETN",
           "comparator_0/rst_n",
-          "multi_cores_top_0/rst_n",
-          "xdma_0_axi_periph/M05_ARESETN",
-          "xdma_0_axi_periph/M06_ARESETN"
+          "multi_cores_top_0/rst_n"
         ]
       },
       "axi_gpio_2_host_Ready": {
@@ -2092,6 +2068,11 @@
               "SEG_axi_gpio_3_Reg": {
                 "address_block": "/axi_gpio_prog_Data/S_AXI/Reg",
                 "offset": "0x00006000",
+                "range": "8K"
+              },
+              "SEG_axi_gpio_number_of_hashes_Reg": {
+                "address_block": "/axi_gpio_number_of_hashes/S_AXI/Reg",
+                "offset": "0x0000A000",
                 "range": "8K"
               }
             }
