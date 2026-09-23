@@ -21,7 +21,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/home/cansu/bf2_hw/bf2_hw.runs/Top_multi_cores_top_0_0_synth_1'
+HD_PWD='/home/cansu/Desktop/bf2/bf2_hw/bf2_hw.runs/Top_multi_cores_top_0_0_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

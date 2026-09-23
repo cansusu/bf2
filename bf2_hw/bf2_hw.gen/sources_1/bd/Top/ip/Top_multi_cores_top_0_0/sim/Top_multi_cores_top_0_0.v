@@ -86,7 +86,9 @@ output wire [31 : 0] write_count;
     .PWD_SIZE(5),
     .EXP_PWD_SIZE(80),
     .NUM_CORES(16),
-    .BRAM_DEPTH(1024)
+    .BRAM_DEPTH(1024),
+    .BF_BITS(32768),
+    .BF_WORD_WIDTH(64)
   ) inst (
     .clk_i(clk_i),
     .rst_n(rst_n),

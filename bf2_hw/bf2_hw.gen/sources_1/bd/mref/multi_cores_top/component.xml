@@ -39,7 +39,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>8e594832</spirit:value>
+            <spirit:value>61e133b3</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -52,7 +52,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>8e594832</spirit:value>
+            <spirit:value>61e133b3</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -255,6 +255,16 @@
         <spirit:displayName>Bram Depth</spirit:displayName>
         <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.BRAM_DEPTH">1024</spirit:value>
       </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>BF_BITS</spirit:name>
+        <spirit:displayName>Bf Bits</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.BF_BITS">32768</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>BF_WORD_WIDTH</spirit:name>
+        <spirit:displayName>Bf Word Width</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.BF_WORD_WIDTH">64</spirit:value>
+      </spirit:modelParameter>
     </spirit:modelParameters>
   </spirit:model>
   <spirit:choices>
@@ -270,7 +280,7 @@
       <spirit:file>
         <spirit:name>xgui/multi_cores_top_v1_0.tcl</spirit:name>
         <spirit:fileType>tclSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_6b0f710f</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_ea8afb7b</spirit:userFileType>
         <spirit:userFileType>XGUI_VERSION_2</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
@@ -298,6 +308,16 @@
       <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.BRAM_DEPTH">1024</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
+      <spirit:name>BF_BITS</spirit:name>
+      <spirit:displayName>Bf Bits</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.BF_BITS">32768</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>BF_WORD_WIDTH</spirit:name>
+      <spirit:displayName>Bf Word Width</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.BF_WORD_WIDTH">64</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
       <spirit:name>Component_Name</spirit:name>
       <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Component_Name" spirit:order="1">multi_cores_top_v1_0</spirit:value>
     </spirit:parameter>
@@ -317,7 +337,7 @@
         <xilinx:designToolContext>IPI</xilinx:designToolContext>
       </xilinx:designToolContexts>
       <xilinx:coreRevision>1</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2026-02-09T17:12:35Z</xilinx:coreCreationDateTime>
+      <xilinx:coreCreationDateTime>2026-09-23T15:01:00Z</xilinx:coreCreationDateTime>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2023.1</xilinx:xilinxVersion>

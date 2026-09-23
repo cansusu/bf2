@@ -4,7 +4,7 @@
 <!-- Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.                   -->
 <!-- Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.   -->
 
-<Project Product="Vivado" Version="7" Minor="63" Path="/home/cansu/bf2_hw/bf2_hw.xpr">
+<Project Product="Vivado" Version="7" Minor="63" Path="/home/cansu/Desktop/bf2/bf2_hw/bf2_hw.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="3d89d3b47ca945bc881775d6ba4859e5"/>
@@ -47,8 +47,8 @@
     <Option Name="ActiveSimSet" Val="sim_1"/>
     <Option Name="DefaultLib" Val="xil_defaultlib"/>
     <Option Name="ProjectType" Val="Default"/>
-    <Option Name="IPRepoPath" Val="$PPRDIR/../ip_repo/axi_reg_1_0"/>
-    <Option Name="IPRepoPath" Val="$PPRDIR/../ip_repo/axi_reg_1_0"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../../../ip_repo/axi_reg_1_0"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../../../ip_repo/axi_reg_1_0"/>
     <Option Name="IPRepoPath" Val="$PPRDIR/../bf_different_sizes/Desktop/NiteFury-and-LiteFury/Sample-Projects/Project-0/FPGA/Nitefury-II/ip_repo/myip_datagen_1_0"/>
     <Option Name="IPOutputRepo" Val="$PCACHEDIR/ip"/>
     <Option Name="IPDefaultOutputPath" Val="$PGENDIR/sources_1"/>
@@ -68,13 +68,13 @@
     <Option Name="WTVcsLaunchSim" Val="0"/>
     <Option Name="WTRivieraLaunchSim" Val="0"/>
     <Option Name="WTActivehdlLaunchSim" Val="0"/>
-    <Option Name="WTXSimExportSim" Val="72"/>
-    <Option Name="WTModelSimExportSim" Val="72"/>
-    <Option Name="WTQuestaExportSim" Val="72"/>
+    <Option Name="WTXSimExportSim" Val="73"/>
+    <Option Name="WTModelSimExportSim" Val="73"/>
+    <Option Name="WTQuestaExportSim" Val="73"/>
     <Option Name="WTIesExportSim" Val="0"/>
-    <Option Name="WTVcsExportSim" Val="72"/>
-    <Option Name="WTRivieraExportSim" Val="72"/>
-    <Option Name="WTActivehdlExportSim" Val="72"/>
+    <Option Name="WTVcsExportSim" Val="73"/>
+    <Option Name="WTRivieraExportSim" Val="73"/>
+    <Option Name="WTActivehdlExportSim" Val="73"/>
     <Option Name="GenerateIPUpgradeLog" Val="TRUE"/>
     <Option Name="XSimRadix" Val="hex"/>
     <Option Name="XSimTimeUnit" Val="ns"/>
@@ -103,7 +103,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/new/bloom_bram_lookup.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../bram_trial/bram_trial.srcs/sources_1/new/bloom_bram_lookup.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../bram_trial/bram_trial.srcs/sources_1/new/bloom_bram_lookup.v"/>
           <Attr Name="ImportTime" Val="1757680579"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -149,12 +149,18 @@
       </File>
       <File Path="$PSRCDIR/sources_1/bd/Top/Top.bd">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../Desktop/NiteFury-and-LiteFury/Sample-Projects/Project-0/FPGA/Nitefury-II/project/project.srcs/sources_1/bd/Top/Top.bd"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../NiteFury-and-LiteFury/Sample-Projects/Project-0/FPGA/Nitefury-II/project/project.srcs/sources_1/bd/Top/Top.bd"/>
           <Attr Name="ImportTime" Val="1744200588"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
+        <CompFileExtendedInfo CompFileName="Top.bd" FileRelPathName="ip/Top_blk_mem_gen_0_1/Top_blk_mem_gen_0_1.xci">
+          <Proxy FileSetName="Top_blk_mem_gen_0_1"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="Top.bd" FileRelPathName="ip/Top_axi_gpio_1_0/Top_axi_gpio_1_0.xci">
+          <Proxy FileSetName="Top_axi_gpio_1_0"/>
+        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="Top.bd" FileRelPathName="ip/Top_rst_clk_wiz_100M_0/Top_rst_clk_wiz_100M_0.xci">
           <Proxy FileSetName="Top_rst_clk_wiz_100M_0"/>
         </CompFileExtendedInfo>
@@ -176,28 +182,22 @@
         <CompFileExtendedInfo CompFileName="Top.bd" FileRelPathName="ip/Top_multi_cores_top_0_0/Top_multi_cores_top_0_0.xci">
           <Proxy FileSetName="Top_multi_cores_top_0_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="Top.bd" FileRelPathName="ip/Top_util_ds_buf_0_1/Top_util_ds_buf_0.xci">
-          <Proxy FileSetName="Top_util_ds_buf_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="Top.bd" FileRelPathName="ip/Top_xdma_0_0_1/Top_xdma_0_0.xci">
-          <Proxy FileSetName="Top_xdma_0_0"/>
+        <CompFileExtendedInfo CompFileName="Top.bd" FileRelPathName="ip/Top_axi_bram_ctrl_0_0/Top_axi_bram_ctrl_0_0.xci">
+          <Proxy FileSetName="Top_axi_bram_ctrl_0_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="Top.bd" FileRelPathName="ip/Top_xbar_1/Top_xbar_1.xci">
           <Proxy FileSetName="Top_xbar_1"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="Top.bd" FileRelPathName="ip/Top_axi_bram_ctrl_0_0/Top_axi_bram_ctrl_0_0.xci">
-          <Proxy FileSetName="Top_axi_bram_ctrl_0_0"/>
+        <CompFileExtendedInfo CompFileName="Top.bd" FileRelPathName="ip/Top_xdma_0_0_1/Top_xdma_0_0.xci">
+          <Proxy FileSetName="Top_xdma_0_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="Top.bd" FileRelPathName="ip/Top_blk_mem_gen_0_1/Top_blk_mem_gen_0_1.xci">
-          <Proxy FileSetName="Top_blk_mem_gen_0_1"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="Top.bd" FileRelPathName="ip/Top_axi_gpio_1_0/Top_axi_gpio_1_0.xci">
-          <Proxy FileSetName="Top_axi_gpio_1_0"/>
+        <CompFileExtendedInfo CompFileName="Top.bd" FileRelPathName="ip/Top_util_ds_buf_0_1/Top_util_ds_buf_0.xci">
+          <Proxy FileSetName="Top_util_ds_buf_0"/>
         </CompFileExtendedInfo>
       </File>
       <File Path="$PGENDIR/sources_1/bd/Top/hdl/Top_wrapper.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../Desktop/NiteFury-and-LiteFury/Sample-Projects/Project-0/FPGA/Nitefury-II/project/project.gen/sources_1/bd/Top/hdl/Top_wrapper.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../NiteFury-and-LiteFury/Sample-Projects/Project-0/FPGA/Nitefury-II/project/project.gen/sources_1/bd/Top/hdl/Top_wrapper.v"/>
           <Attr Name="ImportTime" Val="1744198804"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -206,7 +206,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/bd/Top/ip/Top_mig_7series_0_0/mig_a.prj">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../Desktop/NiteFury-and-LiteFury/Sample-Projects/Project-0/FPGA/Nitefury-II/project/project.srcs/sources_1/bd/Top/ip/Top_mig_7series_0_0/mig_a.prj"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../NiteFury-and-LiteFury/Sample-Projects/Project-0/FPGA/Nitefury-II/project/project.srcs/sources_1/bd/Top/ip/Top_mig_7series_0_0/mig_a.prj"/>
           <Attr Name="ImportTime" Val="1743688725"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="ScopedToCell" Val="Top_mig_7series_0_0"/>
@@ -221,7 +221,7 @@
       <Filter Type="Constrs"/>
       <File Path="$PSRCDIR/constrs_1/imports/constraints/early.xdc">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../Desktop/NiteFury-and-LiteFury/Sample-Projects/Project-0/FPGA/common/Constraints/early.xdc"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../NiteFury-and-LiteFury/Sample-Projects/Project-0/FPGA/common/Constraints/early.xdc"/>
           <Attr Name="ImportTime" Val="1659726646"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -230,7 +230,7 @@
       </File>
       <File Path="$PSRCDIR/constrs_1/imports/constraints/normal.xdc">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../Desktop/NiteFury-and-LiteFury/Sample-Projects/Project-0/FPGA/common/Constraints/normal.xdc"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../NiteFury-and-LiteFury/Sample-Projects/Project-0/FPGA/common/Constraints/normal.xdc"/>
           <Attr Name="ImportTime" Val="1659726646"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -415,7 +415,7 @@
         <ReportConfig DisplayName="synthesis_report" Name="synth_1_copy_1_synth_synthesis_report_0" Spec="" RunStep="synth_design" ReportFile="Top_wrapper.vds">
           <ReportConfigOption Name="dummy_option" Type="string"/>
         </ReportConfig>
-        <ReportConfig DisplayName="Utilization - Synth Design" Name="synth_1_copy_1_synth_report_utilization_0" Spec="report_utilization" RunStep="synth_design" ReportFile="Top_wrapper_utilization_synth_1.rpt" Version="1" Minor="0">
+        <ReportConfig DisplayName="Utilization - Synth Design" Name="synth_1_copy_1_synth_report_utilization_0" Spec="report_utilization" RunStep="synth_design" ReportFile="Top_wrapper_utilization_synth.rpt" Version="1" Minor="0">
           <ReportConfigOption Name="dummy_option" Type="string"/>
           <ReportConfigOutputOption Name="pb" Type="string" Value=""/>
         </ReportConfig>
@@ -472,7 +472,7 @@
         <ReportConfig DisplayName="synthesis_report" Name="synth_1_copy_2_synth_synthesis_report_0" Spec="" RunStep="synth_design" ReportFile="Top_wrapper.vds">
           <ReportConfigOption Name="dummy_option" Type="string"/>
         </ReportConfig>
-        <ReportConfig DisplayName="Utilization - Synth Design" Name="synth_1_copy_2_synth_report_utilization_0" Spec="report_utilization" RunStep="synth_design" ReportFile="Top_wrapper_utilization_synth.rpt" Version="1" Minor="0">
+        <ReportConfig DisplayName="Utilization - Synth Design" Name="synth_1_copy_2_synth_report_utilization_0" Spec="report_utilization" RunStep="synth_design" ReportFile="Top_wrapper_utilization_synth_1.rpt" Version="1" Minor="0">
           <ReportConfigOption Name="dummy_option" Type="string"/>
           <ReportConfigOutputOption Name="pb" Type="string" Value=""/>
         </ReportConfig>
@@ -552,9 +552,7 @@
     </Run>
     <Run Id="Top_comparator_0_0_synth_1" Type="Ft3:Synth" SrcSet="Top_comparator_0_0" Part="xc7a200tfbg484-2" ConstrsSet="Top_comparator_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/Top_comparator_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/Top_comparator_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/Top_comparator_0_0_synth_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -811,9 +809,7 @@
     </Run>
     <Run Id="Top_comparator_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a200tfbg484-2" ConstrsSet="Top_comparator_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="Top_comparator_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/Top_comparator_0_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/Top_comparator_0_0_impl_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>

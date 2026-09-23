@@ -1,5 +1,5 @@
-set_property SRC_FILE_INFO {cfile:/home/cansu/bf2_hw/bf2_hw.srcs/constrs_1/imports/constraints/early.xdc rfile:../../../bf2_hw.srcs/constrs_1/imports/constraints/early.xdc id:1 order:EARLY} [current_design]
-set_property SRC_FILE_INFO {cfile:/home/cansu/bf2_hw/bf2_hw.srcs/constrs_1/imports/constraints/normal.xdc rfile:../../../bf2_hw.srcs/constrs_1/imports/constraints/normal.xdc id:2} [current_design]
+set_property SRC_FILE_INFO {cfile:/home/cansu/Desktop/bf2/bf2_hw/bf2_hw.srcs/constrs_1/imports/constraints/early.xdc rfile:../../../bf2_hw.srcs/constrs_1/imports/constraints/early.xdc id:1 order:EARLY} [current_design]
+set_property SRC_FILE_INFO {cfile:/home/cansu/Desktop/bf2/bf2_hw/bf2_hw.srcs/constrs_1/imports/constraints/normal.xdc rfile:../../../bf2_hw.srcs/constrs_1/imports/constraints/normal.xdc id:2} [current_design]
 set_property src_info {type:XDC file:1 line:10 export:INPUT save:INPUT read:READ} [current_design]
 set_property LOC GTPE2_CHANNEL_X0Y7 [get_cells {Top_i/xdma_0/inst/Top_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/gt_top_i/pipe_wrapper_i/pipe_lane[3].gt_wrapper_i/gtp_channel.gtpe2_channel_i}]
 set_property src_info {type:XDC file:1 line:11 export:INPUT save:INPUT read:READ} [current_design]

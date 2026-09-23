@@ -52,7 +52,7 @@
 
 (* X_CORE_INFO = "multi_cores_top,Vivado 2023.1" *)
 (* CHECK_LICENSE_TYPE = "Top_multi_cores_top_0_0,multi_cores_top,{}" *)
-(* CORE_GENERATION_INFO = "Top_multi_cores_top_0_0,multi_cores_top,{x_ipProduct=Vivado 2023.1,x_ipVendor=xilinx.com,x_ipLibrary=module_ref,x_ipName=multi_cores_top,x_ipVersion=1.0,x_ipCoreRevision=1,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,PWD_SIZE=5,EXP_PWD_SIZE=80,NUM_CORES=16,BRAM_DEPTH=1024}" *)
+(* CORE_GENERATION_INFO = "Top_multi_cores_top_0_0,multi_cores_top,{x_ipProduct=Vivado 2023.1,x_ipVendor=xilinx.com,x_ipLibrary=module_ref,x_ipName=multi_cores_top,x_ipVersion=1.0,x_ipCoreRevision=1,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,PWD_SIZE=5,EXP_PWD_SIZE=80,NUM_CORES=16,BRAM_DEPTH=1024,BF_BITS=32768,BF_WORD_WIDTH=64}" *)
 (* IP_DEFINITION_SOURCE = "module_ref" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module Top_multi_cores_top_0_0 (
@@ -87,7 +87,9 @@ output wire [31 : 0] write_count;
     .PWD_SIZE(5),
     .EXP_PWD_SIZE(80),
     .NUM_CORES(16),
-    .BRAM_DEPTH(1024)
+    .BRAM_DEPTH(1024),
+    .BF_BITS(32768),
+    .BF_WORD_WIDTH(64)
   ) inst (
     .clk_i(clk_i),
     .rst_n(rst_n),

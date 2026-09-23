@@ -1,8 +1,10 @@
 module multi_cores_top #(
-    parameter PWD_SIZE     = 5,
-    parameter EXP_PWD_SIZE = 80,
-    parameter NUM_CORES    = 16,
-    parameter BRAM_DEPTH   = 1024
+    parameter PWD_SIZE      = 5,
+    parameter EXP_PWD_SIZE  = 80,
+    parameter NUM_CORES     = 16,
+    parameter BRAM_DEPTH    = 1024,
+    parameter BF_BITS       = 32768,
+    parameter BF_WORD_WIDTH = 64
 )(
     input  wire         clk_i,
     input  wire         rst_n,
@@ -156,8 +158,8 @@ module multi_cores_top #(
     );
 
     bloom_bram_lookup #(
-        .BF_BITS(32768),
-        .BF_WORD_WIDTH(64)
+        .BF_BITS(BF_BITS),
+        .BF_WORD_WIDTH(BF_WORD_WIDTH)
     ) bf_0 (
         .clk_i(clk_i),
         .rst_n(rst_n),
@@ -234,8 +236,8 @@ module multi_cores_top #(
             );
 
             bloom_bram_lookup #(
-                .BF_BITS(32768),
-                .BF_WORD_WIDTH(64)
+                .BF_BITS(BF_BITS),
+                .BF_WORD_WIDTH(BF_WORD_WIDTH)
             ) bf_i (
                 .clk_i(clk_i),
                 .rst_n(rst_n),

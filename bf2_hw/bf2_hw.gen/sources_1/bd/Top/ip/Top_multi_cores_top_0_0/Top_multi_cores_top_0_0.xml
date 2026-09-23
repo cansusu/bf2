@@ -47,7 +47,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:fc957d52</spirit:value>
+            <spirit:value>9:a8699636</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -59,7 +59,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:c7b6ee67</spirit:value>
+            <spirit:value>9:81eaf9d7</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -73,11 +73,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon Feb 09 17:17:06 UTC 2026</spirit:value>
+            <spirit:value>Wed Sep 23 15:05:56 UTC 2026</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:c7b6ee67</spirit:value>
+            <spirit:value>9:81eaf9d7</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -88,7 +88,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:c7b6ee67</spirit:value>
+            <spirit:value>9:81eaf9d7</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -104,11 +104,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon Feb 09 17:14:04 UTC 2026</spirit:value>
+            <spirit:value>Wed Sep 23 15:01:17 UTC 2026</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:fc957d52</spirit:value>
+            <spirit:value>9:a8699636</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -124,11 +124,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon Feb 09 17:14:04 UTC 2026</spirit:value>
+            <spirit:value>Wed Sep 23 15:01:17 UTC 2026</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:c7b6ee67</spirit:value>
+            <spirit:value>9:81eaf9d7</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -323,6 +323,16 @@
         <spirit:displayName>Bram Depth</spirit:displayName>
         <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.BRAM_DEPTH">1024</spirit:value>
       </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>BF_BITS</spirit:name>
+        <spirit:displayName>Bf Bits</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.BF_BITS">32768</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>BF_WORD_WIDTH</spirit:name>
+        <spirit:displayName>Bf Word Width</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.BF_WORD_WIDTH">64</spirit:value>
+      </spirit:modelParameter>
     </spirit:modelParameters>
   </spirit:model>
   <spirit:choices>
@@ -407,6 +417,16 @@
       <spirit:name>BRAM_DEPTH</spirit:name>
       <spirit:displayName>Bram Depth</spirit:displayName>
       <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.BRAM_DEPTH">1024</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>BF_BITS</spirit:name>
+      <spirit:displayName>Bf Bits</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.BF_BITS">32768</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>BF_WORD_WIDTH</spirit:name>
+      <spirit:displayName>Bf Word Width</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.BF_WORD_WIDTH">64</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>Component_Name</spirit:name>

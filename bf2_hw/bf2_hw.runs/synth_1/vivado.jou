@@ -3,12 +3,12 @@
 # SW Build 3865809 on Sun May  7 15:04:56 MDT 2023
 # IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
 # SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
-# Start of session at: Mon Feb  9 18:17:11 2026
-# Process ID: 16518
-# Current directory: /home/cansu/bf2_hw/bf2_hw.runs/synth_1
+# Start of session at: Wed Sep 23 17:06:01 2026
+# Process ID: 9863
+# Current directory: /home/cansu/Desktop/bf2/bf2_hw/bf2_hw.runs/synth_1
 # Command line: vivado -log Top_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top_wrapper.tcl
-# Log file: /home/cansu/bf2_hw/bf2_hw.runs/synth_1/Top_wrapper.vds
-# Journal file: /home/cansu/bf2_hw/bf2_hw.runs/synth_1/vivado.jou
+# Log file: /home/cansu/Desktop/bf2/bf2_hw/bf2_hw.runs/synth_1/Top_wrapper.vds
+# Journal file: /home/cansu/Desktop/bf2/bf2_hw/bf2_hw.runs/synth_1/vivado.jou
 # Running On: cansu-pc, OS: Linux, CPU Frequency: 2600.000 MHz, CPU Physical cores: 10, Host memory: 67188 MB
 #-----------------------------------------------------------
 source Top_wrapper.tcl -notrace

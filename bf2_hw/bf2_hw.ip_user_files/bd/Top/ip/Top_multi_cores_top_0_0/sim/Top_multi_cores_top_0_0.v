@@ -1,5 +1,5 @@
 // (c) Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-// (c) Copyright 2022-2025 Advanced Micro Devices, Inc. All rights reserved.
+// (c) Copyright 2022-2026 Advanced Micro Devices, Inc. All rights reserved.
 // 
 // This file contains confidential and proprietary information
 // of AMD and is protected under U.S. and international copyright
@@ -86,7 +86,9 @@ output wire [31 : 0] write_count;
     .PWD_SIZE(5),
     .EXP_PWD_SIZE(80),
     .NUM_CORES(16),
-    .BRAM_DEPTH(1024)
+    .BRAM_DEPTH(1024),
+    .BF_BITS(32768),
+    .BF_WORD_WIDTH(64)
   ) inst (
     .clk_i(clk_i),
     .rst_n(rst_n),

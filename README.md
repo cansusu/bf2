@@ -3,7 +3,7 @@ This repository includes the source code for the paper "BF²: A Bloom-Filtered B
 
 `bf2_hw` includes a testbench to test the fpga implementation with a randomly generated bloom filter. Filter contents are read from "bloom_msgs.mem". 
 
-Once FPGA is conencted (For our experiments: Nitefury II - XC7A200T-2FBG484E), with the current directory set to the same directory as the .xpr file, run the following commands in the tcl window: 
+Once FPGA is connected (For our experiments: Nitefury II - XC7A200T-2FBG484E), with the current directory set to the same directory as the .xpr file, run the following commands in the tcl window: 
 ```tcl
 source ./Scripts/add-flash-s25fl256s-0.tcl
 source ./Scripts/program-flash.tcl

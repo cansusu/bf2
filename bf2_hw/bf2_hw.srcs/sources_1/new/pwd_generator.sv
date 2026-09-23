@@ -29,6 +29,7 @@ module pwd_generator #(
         for (j = 0; j < PWD_SIZE-1; j = j + 1) begin
             next_count[j] = count[j];
         end
+
         next_count_mask = count_mask;
 
         if (state == GEN) begin
@@ -36,7 +37,7 @@ module pwd_generator #(
             carry = 1'b1;
 
             if (carry) begin
-                if (count[0] == 7'h3a) begin
+                if (count[0] == 7'h7e) begin
                     next_count[0] = 7'h20;
                     carry = 1'b1;
                 end else begin
@@ -47,7 +48,7 @@ module pwd_generator #(
 
             for (j = 1; j < PWD_SIZE-1; j = j + 1) begin
                 if (carry) begin
-                    if (count[j] == 7'h3a) begin
+                    if (count[j] == 7'h7e) begin
                         next_count[j] = 7'h20;
                         carry = 1'b1;
                     end else begin
@@ -60,7 +61,12 @@ module pwd_generator #(
             end
 
             if (carry) begin
-                next_count_mask = count_mask + 3'd1;
+                // Move through:
+                // 010 -> 011 -> 100 -> 101 -> 110 -> 111
+                //
+                // Do not wrap 111 back to 000.
+                if (count_mask != 3'b111)
+                    next_count_mask = count_mask + 3'd1;
             end
         end
     end
@@ -107,9 +113,23 @@ module pwd_generator #(
                     password_out[7*PWD_SIZE-1 -: 3] <= next_count_mask;
                     password_out[(7*PWD_SIZE)-4 -: 4] <= core_id;
 
-                    if (next_count_mask == 3'b100) begin
-                        state      <= DONE;
-                        gen_finish <= 1'b1; 
+
+                    // Finished when on final mask
+                    if ((count_mask == 3'b111) &&
+                        (next_count_mask == 3'b111)) begin
+
+                        reg all_max;
+                        all_max = 1'b1;
+
+                        for (i = 0; i < PWD_SIZE-1; i = i + 1) begin
+                            if (count[i] != 7'h7e)
+                                all_max = 1'b0;
+                        end
+
+                        if (all_max) begin
+                            state      <= DONE;
+                            gen_finish <= 1'b1;
+                        end
                     end
                 end
 
